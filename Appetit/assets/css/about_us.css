@@ -1,0 +1,15 @@
+.imagen_resto, .texto_about_us, .iframe_maps {
+    display: flex;
+    justify-content: center;
+}
+
+.cuerpo_about_us {
+    line-height: 2;
+    width: 37.5rem;
+    padding: 1.25rem;
+}
+
+.iframe_maps > iframe {
+    width: 600px;
+    height: 450px;
+}

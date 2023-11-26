@@ -1,0 +1,47 @@
+/*estilos css de los enlaces de la nav*/
+a {
+    text-decoration: none;
+    color: black;
+}
+a :hover {
+    color: rgb(245, 206, 122);
+}
+
+/*transicion de los enlaces de nav y footer*/
+.indicadores a{
+    color: black;
+    position: relative;
+}
+
+.indicadores a::before,
+.indicadores a::after
+{
+    content: '';
+    border-bottom: 2px solid rgb(243, 180, 98);
+    position: absolute;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.indicadores a::before{
+    bottom: -5px;
+    width: 90%;
+    right: 0;
+}
+
+.indicadores a::after{
+    bottom: -10px;
+    width: 60%;
+    left: 0;
+}
+
+.indicadores a:hover::before{
+    opacity: 1;
+    width: 70%;
+}
+
+.indicadores a:hover::after{
+    opacity: 1;
+    width: 40%;
+}
+/*hasta aqui la transicion de los enlaces de nav y footer*/

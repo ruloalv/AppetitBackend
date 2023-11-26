@@ -1,0 +1,10 @@
+.imagen_chefs, .texto_chefs {
+    display: flex;
+    justify-content: center;
+}
+
+.cuerpo_chefs {
+    line-height: 2;
+    width: 37.5rem;
+    padding: 1.25rem;
+}

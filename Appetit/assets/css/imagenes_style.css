@@ -1,0 +1,34 @@
+#logo {
+    width: 250px;
+    height: 76px;
+}
+
+/*estilo de las imágenes*/
+main img {
+    border-radius: 1rem;
+}
+
+/*estilo de la imagen que compone el enlace a las recetas*/
+.imagen_del_enlace {
+    width: 150px;
+    height: 150px;
+}
+
+/*estilo de las fotos de las recetas*/
+.imagen_de_receta {
+    width: 595px;
+}
+
+/*estilo de la foto de about_us*/
+#foto_resto {
+    width: 595px;
+}
+
+/*estilo de las fotos de los chefs*/
+.foto_chef {
+    width: 595px;
+}
+.imagen_del_enlace, .imagen_de_receta, .foto_chef, #foto_resto {
+    box-shadow: 0.188rem 0.313rem 0.2rem 0.2rem #91919165;
+    animation: sombreado 5s infinite;
+}

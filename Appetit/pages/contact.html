@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+
+        <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+        <link rel="icon" type="image/x-icon" href="../media/icons/appetit.ico">
+        <!-- icono de Error de googlefonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+
+        <meta property="og:title" content="Appetit"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:url" content="https://www.Appetit.com/"/>
+        <meta property="og:image" content="../assets/media/image/a_logo_Appetit.png"/>
+        <meta property="og:description" content="Appetit - Healthy recipes"/>
+        
+        <script src="https://kit.fontawesome.com/a6d1c73a06.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <header class="header">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../media/image/a_logo_Appetit.png" alt="Logo Appetit">
+            </a>
+        </div>
+        <nav class="menu">
+          <ul class="nav-links">
+              <li><a href="./recipes.html">Recipes</a></li>
+              <li><a href="./chefs.html">Chefs</a></li>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./about_us.html">About us</a></li>
+              <li><a class="btn" href="./contact.html"><button>Contact</button></a></li>
+          </ul>
+      </nav>
+      <a class="btn btn_menu" id="btn_menu">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+      <div class="lista_menu oculto" id="lista_menu">
+          <ul>
+              <li><a href="./recipes.html">Recipes</a></li>
+              <li><a href="./chefs.html">Chefs</a></li>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./about_us.html">About us</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+          </ul>
+      </div>
+      </header>
+
+        <main>
+          <h1 class="titulo_animado">Contact Us</h1>
+          <br>
+          <div class="texto_contact_us">
+            <div class="cuerpo_contact_us">
+              <p>Connect with us to give us any comments and tell us about your experience at Appetit</p>
+            </div>
+          </div>
+          <br>
+          <section class="formulario">
+            <div class="form-div">
+              <form class="form" autocomplete="off">
+                <div class="form-container">
+                  <div class="form-group">
+                    <input name="name" type="text" id="name" class="form-input" placeholder=" " pattern="^[A-Za-z]{3,30}$" minlength="3" maxlength="30" required>
+                    <label for="name" class="form-label">Name:</label>
+                    <span class="form-line"></span>
+                  </div>
+                  <div class="form-group">
+                    <input name="surname" type="text" id="surname" class="form-input" placeholder=" " pattern="^[A-Za-z]{3,30}$" minlength="3" maxlength="30" required>
+                    <label for="surname" class="form-label">Surname:</label>
+                    <span class="form-line"></span>
+                  </div>
+                  <div class="form-group">
+                    <input name="email" type="email" id="email" class="form-input" placeholder=" " pattern="^((?!\.)[\w\-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$" required>
+                    <label for="email" class="form-label">e-mail:</label>
+                    <span class="form-line"></span>
+                  </div>
+                  <div class="form-group">
+                    <textarea name="message" type="text" id="message" class="form-input" placeholder=" " minlength="10" required></textarea>
+                    <label for="message" class="form-label">Message:</label>
+                    <span class="form-line"></span>
+                  </div>
+                  <input class="form-submit" type="submit" value="Send"/>
+                </div>
+
+              </form>
+            </div>
+          </section>
+          <br>
+          <div class="texto_contact_us">
+            <div class="cuerpo_contact_us">
+              <p>For reservations, call us at +54 (011) 4535-1000 or make a reservation at <a href=mailto:appetit_reservations@yahoo.com> our e-mail</a></p>
+            </div>
+          </div>
+          <div class="hache_3">
+            <div class="cuerpo_hache_3">
+              <h3>We look forward to seeing you soon at Appetit, where good health is served in every delicious bite!</h3>
+            </div>
+          </div>         
+        </main>
+        <footer class="footer-distributed">
+          <div class="footer-left">
+              <a href="../index.html">
+              <img id="logo" src="../media/image/a_logo_Appetit.png" alt="Logo Appetit" height="76px" width="250"/></a>  <!-- Al hacer click en el logo se redirige al home -->
+  
+              <p class="footer-links">
+                  <a href="../index.html" target="_blank">Home</a>
+                  |
+                  <a href="../pages/about_us.html" target="_blank">About us</a>
+                  |
+                  <a href="../pages/contact.html" target="_blank">Contact</a>
+                  |
+                  <a href="../pages/chefs.html" target="_blank">Chefs</a>
+              </p>
+  
+              <p class="footer-company-name">Copyright © 2023 <strong>Appetit</strong> All rights reserved</p>
+          </div>
+          <div class="footer-center">
+            <div>
+                <a href="https://maps.app.goo.gl/ZTRZAVtwbNtC2FCt8" target="_blank"> <i class="fa-solid fa-location-dot" style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
+                <p><span>Argentina</span> Buenos Aires</p>
+            </div>
+
+            <div>
+                <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"> <i class="fa-brands fa-whatsapp" style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
+                <p><span>WhatsApp</span>+54 3835784512</p>
+            </div>
+
+            <div>
+                <a href="https://www.gmail.com" target="_blank"> <i class="fa-solid fa-envelope" style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
+                <p><a href="https://mail.google.com/">appetit@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="footer-right">
+            <p class="footer-company-about">
+            <span>About the company</span>
+            If you want to know more about us or our restaurant, do not hesitate to contact us.</p>
+            <div class="footer-icons">
+              <a href="https://www.facebook.com" target="_blank"><img src="../media/social-media/facebook.png" style="width: 38px; height: 38px;"></a>
+              <a href="https://www.instagram.com" target="_blank"><img src="../media/social-media/instagram.webp" style="width: 38px; height: 38px;"></a>
+              <a href="https://www.linkedin.com" target="_blank"><img src="../media/social-media/linkedin.png" style="width: 38px; height: 38px;"></a>
+              <a href="https://www.twitter.com" target="_blank"><img src="../media/social-media/twitter.png" style="width: 38px; height: 38px;"></a>
+              <a href="https://www.youtube.com" target="_blank"><img src="../media/social-media//utube.png" style="width: 38px; height: 38px;"></a>
+            </div>
+          </div>
+        </footer>
+        <script src="../assets/js/contact.js"></script>
+    </body>
+</html>
+<script src="../assets/js/index.js"></script>

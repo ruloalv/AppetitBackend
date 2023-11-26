@@ -1,0 +1,110 @@
+.formulario {
+    display: flex;
+    justify-content: center;
+}
+
+.form-div {
+    background-color: rgb(255, 255, 255);
+    padding: 1.5rem 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0.188rem 0.313rem 0.2rem 0.2rem #91919165;
+    /* Agregue el max-width de 400px para que no se deforme el form en el cambio de medidas del viewport */
+    max-width: 400px;
+    animation: sombreado 5s infinite;
+}
+
+.form-container {
+    display: grid;
+    gap: 2em;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-input {
+    width: 100%;
+    background: none;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: rgba(0,0,0);
+}
+
+.form-label {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+    font-size: 1rem;
+    color: rgba(0,0,0,0.5) ;
+}
+
+textarea {
+    height: 84px;
+    resize: none;
+}
+
+.form-submit {
+    background-color: #36774c;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8rem 0;
+    border: none;
+    border-radius: .5em;
+}
+
+.form-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #36774c;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+}
+
+.form-input:focus ~ .form-line,
+.form-input:not(:placeholder-shown) ~ .form-line {
+    transform: scale(1);
+}
+
+.name, .surname, .email {
+    height: 21px;
+    width: 185px;
+}
+
+/*estilo de los parrafos de contacto*/
+.texto_contact_us {
+    display: flex;
+    justify-content: center;
+}
+
+.cuerpo_about_us {
+    line-height: 2;
+    width: 37.5rem;
+    padding: 1.25rem;
+}
+
+.hache_3 {
+    display: flex;
+    justify-content: center;
+}
+
+.cuerpo_hache_3 {
+    line-height: 2;
+    padding: 1.25rem;
+}
