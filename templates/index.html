@@ -62,27 +62,27 @@
                     <a href="./pages/about_us.html" class="btn-1">About us</a>
                 </div>
                 <div class="header-img">
-                    <img src="./media/image/home/ensalada-1.png" alt="Imagen de ensalada">
+                    <img src="{% static './img/image/home/ensalada-1.png' %}" alt="Imagen de ensalada">
                 </div>
             </div>
         </div>
 
         <section class="info container">
             <div class="info-1">
-                <img src="./media/image/home/time.svg" alt="horario">
+                <img src="{% static './img/image/home/time.svg' %}" alt="horario">
                 <h3>Horario</h3>
                 <p>Lunes a Sábado 08:00 Hs. a 23:00 Hs.</p>
             </div>
 
             <div class="info-1">
-                <img src="./media/image/home/gps.svg" alt="ubicacion">
+                <img src="{% static './img/image/home/gps.svg' %}" alt="ubicacion">
                 <h3>Ubicacion</h3>
                 <p>Argentina (Buenos Aires)</p>
             </div>
 
             <div class="info-1">
-                <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"> <img src="./media/image/home/phone.svg"
-                        alt="telefono">
+                <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
+                    <img src="{% static './img/image/home/phone.svg' %}" alt="telefono">
                     <h3>Telefono</h3>
                     <p>+54 3835784512</p>
             </div>
@@ -99,8 +99,9 @@
 
             <div class="product-info">
                 <div class="product">
-                    <a href="./pages/chocolate_raspberry_dreams_breakfast_parfait.html"> <img
-                            src="./media/image/breakfast/chocolate_raspberry_chico.jpg" alt="Chocolate raspberry">
+                    <a href="./pages/chocolate_raspberry_dreams_breakfast_parfait.html">
+                        <img src="{% static './img/image/breakfast/chocolate_raspberry_chico.jpg' %}"
+                            alt="Chocolate raspberry">
                         <h3>Chocolate raspberry dreams breakfast parfait</h3>
                     </a>
                     <p>
@@ -113,8 +114,8 @@
                 </div>
 
                 <div class="product">
-                    <a href="./pages/Flourless_bite_sized_breakfast_muffins.html"><img
-                            src="./media/image/breakfast/muffins_chico.jpg" alt="muffins">
+                    <a href="./pages/Flourless_bite_sized_breakfast_muffins.html">
+                        <img src="{% static './img/image/breakfast/muffins_chico.jpg' %}" alt="muffins">
                         <h3>Flourless bite-sized muffins</h3>
                     </a>
                     <p>
@@ -124,8 +125,8 @@
                 </div>
 
                 <div class="product">
-                    <a href="./pages/High_protein_vegan_breakfast_burrito.html"><img
-                            src="./media/image/breakfast/burrito_chico.jpg" alt="burrito">
+                    <a href="./pages/High_protein_vegan_breakfast_burrito.html">
+                        <img src=" {% static './img/image/breakfast/burrito_chico.jpg' %}" alt="burrito">
                         <h3>High protein vegan breakfast <br> burrito</h3>
                     </a>
                     <p>
@@ -146,7 +147,7 @@
             <div class="product-info">
                 <div class="product">
                     <a href="./pages/chickpea_salad.html">
-                        <img src="./media/image/lunch/Receta_1.1_chico.png" alt="Chickpea Salad">
+                        <img src="{% static './img/image/lunch/Receta_1.1_chico.png' %}" alt="Chickpea Salad">
                         <h3>Chickpea Salad</h3>
                     </a>
                     <p>
@@ -162,7 +163,7 @@
 
                 <div class="product">
                     <a href="./pages/vegetable_and_egg_tart.html">
-                        <img src="./media/image/lunch/Receta_2.1_chico.png" alt="Vegetable and Egg Tart">
+                        <img src="{% static './img/image/lunch/Receta_2.1_chico.png' %}" alt="Vegetable and Egg Tart">
                         <h3>Vegetable and Egg Tart</h3>
                     </a>
                     <p>
@@ -177,7 +178,7 @@
 
                 <div class="product">
                     <a href="./pages/chicken_chaufa.html">
-                        <img src="./media/image/lunch/Receta_3.1_chico.png" alt="Chicken Chaufa">
+                        <img src="{% static './img/image/lunch/Receta_3.1_chico.png' %}" alt="Chicken Chaufa">
                         <h3>Chicken Chaufa</h3>
                     </a>
                     <p>
@@ -198,7 +199,7 @@
             <div class="product-info">
                 <div class="product">
                     <a href="./pages/strawberry_and_kiwi_bons.html">
-                        <img src="./media/image/dessert/strawberry_kiwi_bons_chico.jpg"
+                        <img src="{% static './img/image/dessert/strawberry_kiwi_bons_chico.jpg' %}"
                             alt="strawberry and kiwi bons square image">
                         <h3>Strawberry and kiwi bons with chocolate</h3>
                     </a>
@@ -215,7 +216,8 @@
 
                 <div class="product">
                     <a href="./pages/Apple_flan.html">
-                        <img src="./media/image/dessert/apple_flan_chico.jpg" alt="apple flan square image">
+                        <img src="{% static ' ./img/image/dessert/apple_flan_chico.jpg' %}"
+                            alt="apple flan square image">
                         <h3>Apple flan</h3>
                     </a>
                     <p>
@@ -230,7 +232,8 @@
 
                 <div class="product">
                     <a href="./pages/Healthy_tres_leches_cake.html">
-                        <img src="./media/image/dessert/tres_leches_chico.jpg" alt="healty tres leches square image">
+                        <img src="{% static './img/image/dessert/tres_leches_chico.jpg' %}"
+                            alt="healty tres leches square image">
                         <h3>Healty tres leches cake</h3>
                     </a>
                     <p>
@@ -246,10 +249,10 @@
         </section>
 
         <section class="nosotros">
-            <img class="bg-2" src="./media/image/home/circulo1.jpg" alt="imagen circulo">
+            <img class="bg-2" src="{% static './img/image/home/circulo1.jpg' %}" alt="imagen circulo">
             <div class="nosotros-info container">
                 <div class="nosotros-img">
-                    <img src="./media/image/home/ensalada-2.png" alt="imagen de ensalada">
+                    <img src="{% static './img/image/home/ensalada-2.png' %}" alt="imagen de ensalada">
                 </div>
 
                 <div class="nosotros-txt">
@@ -270,7 +273,8 @@
 
     <footer class="footer-distributed">
         <div class="footer-left">
-            <a href="../index.html"> <img id="logo" src="./media/image/a_logo_Appetit.png" alt="Logo Appetit" /></a>
+            <a href="../index.html"> <img id="logo" src="{% static './img/image/a_logo_Appetit.png' %}"
+                    alt="Logo Appetit" /></a>
             <!-- Al hacer click en el logo se redirige al home -->
 
             <div class="footer-links">
@@ -313,15 +317,15 @@
             </p>
             <div class="footer-icons">
                 <a href="https://www.facebook.com" target="_blank"><img class="icono_footer"
-                        src="./media/social-media/facebook.png"></a>
+                        src="{% static './img/social-media/facebook.png' %}"></a>
                 <a href="https://www.instagram.com" target="_blank"><img class="icono_footer"
-                        src="./media/social-media/instagram.webp"></a>
+                        src="{% static './img/social-media/instagram.webp' %}"></a>
                 <a href="https://www.linkedin.com" target="_blank"><img class="icono_footer"
-                        src="./media/social-media/linkedin.png"></a>
+                        src="{% static './img/social-media/linkedin.png' %}"></a>
                 <a href="https://www.twitter.com" target="_blank"><img class="icono_footer"
-                        src="./media/social-media/twitter.png"></a>
+                        src="{% static './img/social-media/twitter.png' %}"></a>
                 <a href="https://www.youtube.com" target="_blank"><img class="icono_footer"
-                        src="./media/social-media//utube.png"></a>
+                        src="{% static './img/social-media//utube.png' %}"></a>
             </div>
         </div>
     </footer>
