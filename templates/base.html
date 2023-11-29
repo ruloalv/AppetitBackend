@@ -1,0 +1,118 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appetit - Healty recipes</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static './css/main.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static './img/icons/appetit.ico' %}">
+
+    <meta property="og:title" content="Appetit" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.Appetit.com/" />
+    <meta property="og:image" content="{% static './image/a_logo_Appetit.png' %}" />
+    <meta property="og:description" content="Appetit - Healthy recipes" />
+    <script src="https://kit.fontawesome.com/a6d1c73a06.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img class="bg" src="{% static './img/image/home/circulo2.jpg' %}" alt="Fondo del encabezado">
+        <div class="logo">
+            <a href="{% url 'index' %}">
+                <img src="{% static './img/image/a_logo_Appetit.png' %}" alt="Logo Appetit">
+            </a>
+        </div>
+        <nav class="menu">
+            <ul class="nav-links">
+                <li><a href="./pages/recipes.html">Recipes</a></li>
+                <li><a href="./pages/chefs.html">Chefs</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="{% url 'about_us' %}">About us</a></li>
+                <li><a class="btn" href="./pages/contact.html"><button>Contact</button></a></li>
+            </ul>
+        </nav>
+        <a class="btn btn_menu" id="btn_menu">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+        <div class="lista_menu oculto" id="lista_menu">
+            <ul>
+                <li><a href="./pages/recipes.html">Recipes</a></li>
+                <li><a href="./pages/chefs.html">Chefs</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./pages/about_us.html">About us</a></li>
+                <li><a href="./pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <br>
+
+    {% block main %}
+    {% endblock %}
+
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <a href="../index.html"> <img id="logo" src="{% static './img/image/a_logo_Appetit.png' %}"
+                    alt="Logo Appetit" /></a>
+            <!-- Al hacer click en el logo se redirige al home -->
+
+            <div class="footer-links">
+                <a href="./index.html">Home</a>
+                |
+                <a href="./pages/about_us.html" target="_blank">About us</a>
+                |
+                <a href="./pages/contact.html" target="_blank">Contact</a>
+                |
+                <a href="./pages/chefs.html" target="_blank">Chefs</a>
+            </div>
+
+            <p class="footer-company-name">Copyright © 2023 <strong>Appetit</strong> All rights reserved</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <a href="https://maps.app.goo.gl/ZTRZAVtwbNtC2FCt8" target="_blank"> <i class="fa-solid fa-location-dot"
+                        style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
+                <p><span>Argentina</span> Buenos Aires</p>
+            </div>
+
+            <div>
+                <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"> <i class="fa-brands fa-whatsapp"
+                        style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
+                <p><span>WhatsApp</span>+54 3835784512</p>
+            </div>
+
+            <div>
+                <a href="https://www.gmail.com" target="_blank"> <i class="fa-solid fa-envelope"
+                        style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
+                <p><a href="https://mail.google.com/">appetit@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                If you want to know more about us or our
+                restaurant, do not hesitate to contact
+                us.
+            </p>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com" target="_blank"><img class="icono_footer"
+                        src="{% static './img/social-media/facebook.png' %}"></a>
+                <a href="https://www.instagram.com" target="_blank"><img class="icono_footer"
+                        src="{% static './img/social-media/instagram.webp' %}"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img class="icono_footer"
+                        src="{% static './img/social-media/linkedin.png' %}"></a>
+                <a href="https://www.twitter.com" target="_blank"><img class="icono_footer"
+                        src="{% static './img/social-media/twitter.png' %}"></a>
+                <a href="https://www.youtube.com" target="_blank"><img class="icono_footer"
+                        src="{% static './img/social-media//utube.png' %}"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="{% static './js/index.js' %}"></script>
+
+</html>

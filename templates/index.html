@@ -1,335 +1,226 @@
+{% extends "base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appetit - Healty recipes</title>
-
-    <link rel="stylesheet" type="text/css" href="{% static './css/main.css' %}">
-    <link rel="icon" type="image/x-icon" href="{% static './img/icons/appetit.ico' %}">
-
-    <meta property="og:title" content="Appetit" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://www.Appetit.com/" />
-    <meta property="og:image" content="{% static './image/a_logo_Appetit.png' %}" />
-    <meta property="og:description" content="Appetit - Healthy recipes" />
-    <script src="https://kit.fontawesome.com/a6d1c73a06.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <header class="header">
-        <img class="bg" src="{% static './img/image/home/circulo2.jpg' %}" alt="Fondo del encabezado">
-        <div class="logo">
-            <a href="./index.html"> <img src="{% static './img/image/a_logo_Appetit.png' %}" alt="Logo Appetit"> </a>
-        </div>
-        <nav class="menu">
-            <ul class="nav-links">
-                <li><a href="./pages/recipes.html">Recipes</a></li>
-                <li><a href="./pages/chefs.html">Chefs</a></li>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./pages/about_us.html">About us</a></li>
-                <li><a class="btn" href="./pages/contact.html"><button>Contact</button></a></li>
-            </ul>
-        </nav>
-        <a class="btn btn_menu" id="btn_menu">
-            <i class="fa-solid fa-bars"></i>
-        </a>
-        <div class="lista_menu oculto" id="lista_menu">
-            <ul>
-                <li><a href="./pages/recipes.html">Recipes</a></li>
-                <li><a href="./pages/chefs.html">Chefs</a></li>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./pages/about_us.html">About us</a></li>
-                <li><a href="./pages/contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </header>
-    <br>
-
-    <main>
-        <div class="container">
-            <div class="header-info">
-                <div class="header-txt">
-                    <h1>Each dish tells a story</h1>
-                    <p>
-                        We are a couple of passionate chefs, and we have merged our experiences and creativity
-                        to bring you a unique collection of recipes. Every dish you'll find here is the
-                        result of years of love for cooking, experimentation, and the desire
-                        to take your home-cooked meals to the next level.
-                    </p>
-                    <a href="./pages/about_us.html" class="btn-1">About us</a>
-                </div>
-                <div class="header-img">
-                    <img src="{% static './img/image/home/ensalada-1.png' %}" alt="Imagen de ensalada">
-                </div>
+{% block main %}
+<main>
+    <div class="container">
+        <div class="header-info">
+            <div class="header-txt">
+                <h1>Each dish tells a story</h1>
+                <p>
+                    We are a couple of passionate chefs, and we have merged our experiences and creativity
+                    to bring you a unique collection of recipes. Every dish you'll find here is the
+                    result of years of love for cooking, experimentation, and the desire
+                    to take your home-cooked meals to the next level.
+                </p>
+                <a href="./pages/about_us.html" class="btn-1">About us</a>
+            </div>
+            <div class="header-img">
+                <img src="{% static './img/image/home/ensalada-1.png' %}" alt="Imagen de ensalada">
             </div>
         </div>
+    </div>
 
-        <section class="info container">
-            <div class="info-1">
-                <img src="{% static './img/image/home/time.svg' %}" alt="horario">
-                <h3>Horario</h3>
-                <p>Lunes a Sábado 08:00 Hs. a 23:00 Hs.</p>
-            </div>
+    <section class="info container">
+        <div class="info-1">
+            <img src="{% static './img/image/home/time.svg' %}" alt="horario">
+            <h3>Horario</h3>
+            <p>Lunes a Sábado 08:00 Hs. a 23:00 Hs.</p>
+        </div>
 
-            <div class="info-1">
-                <img src="{% static './img/image/home/gps.svg' %}" alt="ubicacion">
-                <h3>Ubicacion</h3>
-                <p>Argentina (Buenos Aires)</p>
-            </div>
+        <div class="info-1">
+            <img src="{% static './img/image/home/gps.svg' %}" alt="ubicacion">
+            <h3>Ubicacion</h3>
+            <p>Argentina (Buenos Aires)</p>
+        </div>
 
-            <div class="info-1">
-                <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
-                    <img src="{% static './img/image/home/phone.svg' %}" alt="telefono">
-                    <h3>Telefono</h3>
-                    <p>+54 3835784512</p>
-            </div>
-        </section>
+        <div class="info-1">
+            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
+                <img src="{% static './img/image/home/phone.svg' %}" alt="telefono">
+                <h3>Telefono</h3>
+                <p>+54 3835784512</p>
+        </div>
+    </section>
 
-        <section class="products container">
+    <section class="products container">
 
-            <div class="enlaces_a_secciones">
-                <a href="./pages/breakfast.html">
-                    <h2>Breakfast</h2>
+        <div class="enlaces_a_secciones">
+            <a href="./pages/breakfast.html">
+                <h2>Breakfast</h2>
+            </a>
+        </div>
+        <br>
+
+        <div class="product-info">
+            <div class="product">
+                <a href="./pages/chocolate_raspberry_dreams_breakfast_parfait.html">
+                    <img src="{% static './img/image/breakfast/chocolate_raspberry_chico.jpg' %}"
+                        alt="Chocolate raspberry">
+                    <h3>Chocolate raspberry dreams breakfast parfait</h3>
                 </a>
-            </div>
-            <br>
-
-            <div class="product-info">
-                <div class="product">
-                    <a href="./pages/chocolate_raspberry_dreams_breakfast_parfait.html">
-                        <img src="{% static './img/image/breakfast/chocolate_raspberry_chico.jpg' %}"
-                            alt="Chocolate raspberry">
-                        <h3>Chocolate raspberry dreams breakfast parfait</h3>
-                    </a>
-                    <p>
-                        This delicious dish combines the pleasure of
-                        chocolate with the freshness of
-                        raspberries, offering a blend rich in antioxidants,
-                        fiber, and proteins.
-                    </p>
-                    <a href="./pages/chocolate_raspberry_dreams_breakfast_parfait.html"><span>Ver receta</span></a>
-                </div>
-
-                <div class="product">
-                    <a href="./pages/Flourless_bite_sized_breakfast_muffins.html">
-                        <img src="{% static './img/image/breakfast/muffins_chico.jpg' %}" alt="muffins">
-                        <h3>Flourless bite-sized muffins</h3>
-                    </a>
-                    <p>
-                        They can provide satiety, gluten-free options,
-                        and portion control for a balanced diet.</p>
-                    <a href="./pages/Flourless_bite_sized_breakfast_muffins.html"><span>Ver receta</span></a>
-                </div>
-
-                <div class="product">
-                    <a href="./pages/High_protein_vegan_breakfast_burrito.html">
-                        <img src=" {% static './img/image/breakfast/burrito_chico.jpg' %}" alt="burrito">
-                        <h3>High protein vegan breakfast <br> burrito</h3>
-                    </a>
-                    <p>
-                        Eating a high-protein vegan breakfast burrito
-                        can provide
-                        sustained energy and support muscle health. </p>
-                    <a href="./pages/High_protein_vegan_breakfast_burrito.html"><span>Ver receta</span></a>
-                </div>
+                <p>
+                    This delicious dish combines the pleasure of
+                    chocolate with the freshness of
+                    raspberries, offering a blend rich in antioxidants,
+                    fiber, and proteins.
+                </p>
+                <a href="./pages/chocolate_raspberry_dreams_breakfast_parfait.html"><span>Ver receta</span></a>
             </div>
 
-            <div class="enlaces_a_secciones">
-                <a href="./pages/lunch.html">
-                    <h2>Lunch</h2>
+            <div class="product">
+                <a href="./pages/Flourless_bite_sized_breakfast_muffins.html">
+                    <img src="{% static './img/image/breakfast/muffins_chico.jpg' %}" alt="muffins">
+                    <h3>Flourless bite-sized muffins</h3>
                 </a>
-            </div>
-            <br>
-
-            <div class="product-info">
-                <div class="product">
-                    <a href="./pages/chickpea_salad.html">
-                        <img src="{% static './img/image/lunch/Receta_1.1_chico.png' %}" alt="Chickpea Salad">
-                        <h3>Chickpea Salad</h3>
-                    </a>
-                    <p>
-                        Offers a nutrient-rich meal with high protein
-                        and fiber content,
-                        promoting satiety and digestive health </p>
-
-                    <a href="./pages/chickpea_salad.html">
-                        <span>Ver receta</span>
-                    </a>
-
-                </div>
-
-                <div class="product">
-                    <a href="./pages/vegetable_and_egg_tart.html">
-                        <img src="{% static './img/image/lunch/Receta_2.1_chico.png' %}" alt="Vegetable and Egg Tart">
-                        <h3>Vegetable and Egg Tart</h3>
-                    </a>
-                    <p>
-                        Provides a flavorful combination of protein and
-                        vegetables,
-                        offering a satisfying and nutritious meal
-                    </p>
-                    <a href="./pages/vegetable_and_egg_tart.html">
-                        <span>Ver receta</span>
-                    </a>
-                </div>
-
-                <div class="product">
-                    <a href="./pages/chicken_chaufa.html">
-                        <img src="{% static './img/image/lunch/Receta_3.1_chico.png' %}" alt="Chicken Chaufa">
-                        <h3>Chicken Chaufa</h3>
-                    </a>
-                    <p>
-                        Offers a delicious blend of protein and
-                        vegetables, delivering a savory and fulfilling meal.
-                    </p>
-                    <a href="./pages/chicken_chaufa.html">
-                        <span>Ver receta</span>
-                    </a>
-                </div>
+                <p>
+                    They can provide satiety, gluten-free options,
+                    and portion control for a balanced diet.</p>
+                <a href="./pages/Flourless_bite_sized_breakfast_muffins.html"><span>Ver receta</span></a>
             </div>
 
-            <div class="enlaces_a_secciones"> <a href="./pages/dessert.html">
-                    <h2>Dessert</h2>
+            <div class="product">
+                <a href="./pages/High_protein_vegan_breakfast_burrito.html">
+                    <img src=" {% static './img/image/breakfast/burrito_chico.jpg' %}" alt="burrito">
+                    <h3>High protein vegan breakfast <br> burrito</h3>
+                </a>
+                <p>
+                    Eating a high-protein vegan breakfast burrito
+                    can provide
+                    sustained energy and support muscle health. </p>
+                <a href="./pages/High_protein_vegan_breakfast_burrito.html"><span>Ver receta</span></a>
+            </div>
+        </div>
+
+        <div class="enlaces_a_secciones">
+            <a href="./pages/lunch.html">
+                <h2>Lunch</h2>
+            </a>
+        </div>
+        <br>
+
+        <div class="product-info">
+            <div class="product">
+                <a href="./pages/chickpea_salad.html">
+                    <img src="{% static './img/image/lunch/Receta_1.1_chico.png' %}" alt="Chickpea Salad">
+                    <h3>Chickpea Salad</h3>
+                </a>
+                <p>
+                    Offers a nutrient-rich meal with high protein
+                    and fiber content,
+                    promoting satiety and digestive health </p>
+
+                <a href="./pages/chickpea_salad.html">
+                    <span>Ver receta</span>
+                </a>
+
+            </div>
+
+            <div class="product">
+                <a href="./pages/vegetable_and_egg_tart.html">
+                    <img src="{% static './img/image/lunch/Receta_2.1_chico.png' %}" alt="Vegetable and Egg Tart">
+                    <h3>Vegetable and Egg Tart</h3>
+                </a>
+                <p>
+                    Provides a flavorful combination of protein and
+                    vegetables,
+                    offering a satisfying and nutritious meal
+                </p>
+                <a href="./pages/vegetable_and_egg_tart.html">
+                    <span>Ver receta</span>
                 </a>
             </div>
 
-            <div class="product-info">
-                <div class="product">
-                    <a href="./pages/strawberry_and_kiwi_bons.html">
-                        <img src="{% static './img/image/dessert/strawberry_kiwi_bons_chico.jpg' %}"
-                            alt="strawberry and kiwi bons square image">
-                        <h3>Strawberry and kiwi bons with chocolate</h3>
-                    </a>
-                    <p>
-                        Provides a delightful mix of fruit and
-                        antioxidants, making for a
-                        tasty and healthful treat.
-                    </p>
-                    <a href="./pages/strawberry_and_kiwi_bons.html">
-                        <span>Ver receta</span>
-                    </a>
-                </div>
-
-
-                <div class="product">
-                    <a href="./pages/Apple_flan.html">
-                        <img src="{% static './img/image/dessert/apple_flan_chico.jpg' %}"
-                            alt="apple flan square image">
-                        <h3>Apple flan</h3>
-                    </a>
-                    <p>
-                        Offers a sweet and comforting dessert, often
-                        enriched with fiber and
-                        vitamins from the apples.
-                    </p>
-                    <a href="./pages/Apple_flan.html">
-                        <span>Ver receta</span>
-                    </a>
-                </div>
-
-                <div class="product">
-                    <a href="./pages/Healthy_tres_leches_cake.html">
-                        <img src="{% static './img/image/dessert/tres_leches_chico.jpg' %}"
-                            alt="healty tres leches square image">
-                        <h3>Healty tres leches cake</h3>
-                    </a>
-                    <p>
-                        Allows for a guilt-free treat, offering reduced
-                        sugar
-                        and fat content while maintaining rich flavor.
-                    </p>
-                    <a href="./pages/Healthy_tres_leches_cake.html">
-                        <span>Ver receta</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="nosotros">
-            <img class="bg-2" src="{% static './img/image/home/circulo1.jpg' %}" alt="imagen circulo">
-            <div class="nosotros-info container">
-                <div class="nosotros-img">
-                    <img src="{% static './img/image/home/ensalada-2.png' %}" alt="imagen de ensalada">
-                </div>
-
-                <div class="nosotros-txt">
-                    <h2>Our dishes are our signature</h2>
-                    <p>
-                        If you want to learn directly from us, we also offer master classes
-                        and in-person culinary experiences. Imagine learning to cook our dishes
-                        in your own kitchen with our direct guidance and support.
-                        <br><br>
-                        So join us on this exciting culinary adventure. The kitchen is our
-                        canvas and food is our form of expression.
-                    </p>
-                    <a href="./pages/contact.html" class="btn-1">Contact</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer-distributed">
-        <div class="footer-left">
-            <a href="../index.html"> <img id="logo" src="{% static './img/image/a_logo_Appetit.png' %}"
-                    alt="Logo Appetit" /></a>
-            <!-- Al hacer click en el logo se redirige al home -->
-
-            <div class="footer-links">
-                <a href="./index.html">Home</a>
-                |
-                <a href="./pages/about_us.html" target="_blank">About us</a>
-                |
-                <a href="./pages/contact.html" target="_blank">Contact</a>
-                |
-                <a href="./pages/chefs.html" target="_blank">Chefs</a>
-            </div>
-
-            <p class="footer-company-name">Copyright © 2023 <strong>Appetit</strong> All rights reserved</p>
-        </div>
-        <div class="footer-center">
-            <div>
-                <a href="https://maps.app.goo.gl/ZTRZAVtwbNtC2FCt8" target="_blank"> <i class="fa-solid fa-location-dot"
-                        style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
-                <p><span>Argentina</span> Buenos Aires</p>
-            </div>
-
-            <div>
-                <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"> <i class="fa-brands fa-whatsapp"
-                        style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
-                <p><span>WhatsApp</span>+54 3835784512</p>
-            </div>
-
-            <div>
-                <a href="https://www.gmail.com" target="_blank"> <i class="fa-solid fa-envelope"
-                        style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
-                <p><a href="https://mail.google.com/">appetit@gmail.com</a></p>
+            <div class="product">
+                <a href="./pages/chicken_chaufa.html">
+                    <img src="{% static './img/image/lunch/Receta_3.1_chico.png' %}" alt="Chicken Chaufa">
+                    <h3>Chicken Chaufa</h3>
+                </a>
+                <p>
+                    Offers a delicious blend of protein and
+                    vegetables, delivering a savory and fulfilling meal.
+                </p>
+                <a href="./pages/chicken_chaufa.html">
+                    <span>Ver receta</span>
+                </a>
             </div>
         </div>
-        <div class="footer-right">
-            <p class="footer-company-about">
-                <span>About the company</span>
-                If you want to know more about us or our
-                restaurant, do not hesitate to contact
-                us.
-            </p>
-            <div class="footer-icons">
-                <a href="https://www.facebook.com" target="_blank"><img class="icono_footer"
-                        src="{% static './img/social-media/facebook.png' %}"></a>
-                <a href="https://www.instagram.com" target="_blank"><img class="icono_footer"
-                        src="{% static './img/social-media/instagram.webp' %}"></a>
-                <a href="https://www.linkedin.com" target="_blank"><img class="icono_footer"
-                        src="{% static './img/social-media/linkedin.png' %}"></a>
-                <a href="https://www.twitter.com" target="_blank"><img class="icono_footer"
-                        src="{% static './img/social-media/twitter.png' %}"></a>
-                <a href="https://www.youtube.com" target="_blank"><img class="icono_footer"
-                        src="{% static './img/social-media//utube.png' %}"></a>
+
+        <div class="enlaces_a_secciones"> <a href="./pages/dessert.html">
+                <h2>Dessert</h2>
+            </a>
+        </div>
+
+        <div class="product-info">
+            <div class="product">
+                <a href="./pages/strawberry_and_kiwi_bons.html">
+                    <img src="{% static './img/image/dessert/strawberry_kiwi_bons_chico.jpg' %}"
+                        alt="strawberry and kiwi bons square image">
+                    <h3>Strawberry and kiwi bons with chocolate</h3>
+                </a>
+                <p>
+                    Provides a delightful mix of fruit and
+                    antioxidants, making for a
+                    tasty and healthful treat.
+                </p>
+                <a href="./pages/strawberry_and_kiwi_bons.html">
+                    <span>Ver receta</span>
+                </a>
+            </div>
+
+
+            <div class="product">
+                <a href="./pages/Apple_flan.html">
+                    <img src="{% static './img/image/dessert/apple_flan_chico.jpg' %}" alt="apple flan square image">
+                    <h3>Apple flan</h3>
+                </a>
+                <p>
+                    Offers a sweet and comforting dessert, often
+                    enriched with fiber and
+                    vitamins from the apples.
+                </p>
+                <a href="./pages/Apple_flan.html">
+                    <span>Ver receta</span>
+                </a>
+            </div>
+
+            <div class="product">
+                <a href="./pages/Healthy_tres_leches_cake.html">
+                    <img src="{% static './img/image/dessert/tres_leches_chico.jpg' %}"
+                        alt="healty tres leches square image">
+                    <h3>Healty tres leches cake</h3>
+                </a>
+                <p>
+                    Allows for a guilt-free treat, offering reduced
+                    sugar
+                    and fat content while maintaining rich flavor.
+                </p>
+                <a href="./pages/Healthy_tres_leches_cake.html">
+                    <span>Ver receta</span>
+                </a>
             </div>
         </div>
-    </footer>
-</body>
+    </section>
 
-</html>
-<script src="{% static './js/index.js' %}"></script>
+    <section class="nosotros">
+        <img class="bg-2" src="{% static './img/image/home/circulo1.jpg' %}" alt="imagen circulo">
+        <div class="nosotros-info container">
+            <div class="nosotros-img">
+                <img src="{% static './img/image/home/ensalada-2.png' %}" alt="imagen de ensalada">
+            </div>
+
+            <div class="nosotros-txt">
+                <h2>Our dishes are our signature</h2>
+                <p>
+                    If you want to learn directly from us, we also offer master classes
+                    and in-person culinary experiences. Imagine learning to cook our dishes
+                    in your own kitchen with our direct guidance and support.
+                    <br><br>
+                    So join us on this exciting culinary adventure. The kitchen is our
+                    canvas and food is our form of expression.
+                </p>
+                <a href="./pages/contact.html" class="btn-1">Contact</a>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
