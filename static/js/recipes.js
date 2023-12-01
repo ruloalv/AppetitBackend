@@ -5,7 +5,7 @@ const renderRecipes = (data) => {
     let breakfast = 0;
     let lunch = 0;
     let dessert = 0;
-    
+
     let grupoBreakfast = document.createElement("section");
     grupoBreakfast.classList.add("contenedor_de_enlaces_01");
     let titulob = document.createElement("h2");
@@ -38,7 +38,7 @@ const renderRecipes = (data) => {
     let divd = document.createElement("div");
     divd.appendChild(linkd);
     divd.classList.add("enlaces_a_secciones");
-    
+
     for (let i = 0; i < data.length; i++) {
         let receta = document.createElement("div");
         receta.classList.add("enlace_a_receta");
@@ -55,20 +55,20 @@ const renderRecipes = (data) => {
         enlace.appendChild(texto);
         receta.appendChild(enlace);
 
-        if (data[i].type === "Breakfast" && breakfast<3){
+        if (data[i].type === "Breakfast" && breakfast < 3) {
             grupoBreakfast.appendChild(receta);
             breakfast += 1;
         }
-        if (data[i].type === "Lunch" && lunch<3){
+        if (data[i].type === "Lunch" && lunch < 3) {
             grupoLunch.appendChild(receta);
             lunch += 1;
         }
-        if (data[i].type === "Dessert" && dessert<3){
+        if (data[i].type === "Dessert" && dessert < 3) {
             grupoDessert.appendChild(receta);
             dessert += 1;
         }
-        if (breakfast === lunch === dessert === 3){
-            break; 
+        if (breakfast === lunch === dessert === 3) {
+            break;
         }
     }
     let contenedor = document.getElementById("main");
@@ -83,13 +83,13 @@ const renderRecipes = (data) => {
 }
 
 fetch(URL, {
-method: "GET",
-headers: {Authorization: `Bearer ${TOKEN}`},
+    method: "GET",
+    headers: { Authorization: `Bearer ${TOKEN}` },
 })
-.then(res => res.json())
-// .then(data => {console.log(data[1].imgSmall)})
-.then(data => renderRecipes(data))
-.catch((error) => {
-    error;
-    console.log(error)
-})
+    .then(res => res.json())
+    // .then(data => {console.log(data[1].imgSmall)})
+    .then(data => renderRecipes(data))
+    .catch((error) => {
+        error;
+        console.log(error)
+    })

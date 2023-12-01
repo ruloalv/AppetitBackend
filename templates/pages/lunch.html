@@ -1,146 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lunch</title>
+{% extends "base.html" %}
+{% load static %}
 
-        <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
-        <link rel="icon" type="image/x-icon" href="../media/icons/appetit.ico">
-
-        <meta property="og:title" content="Appetit"/>
-        <meta property="og:type" content="article"/>
-        <meta property="og:url" content="https://www.Appetit.com/"/>
-        <meta property="og:image" content="../assets/media/image/a_logo_Appetit.png"/>
-        <meta property="og:description" content="Appetit - Lunch"/>
-        
-        <script src="https://kit.fontawesome.com/a6d1c73a06.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header class="header">
-            <div class="logo">
-                <a href="../index.html">
-                    <img src="../media/image/a_logo_Appetit.png" alt="Logo Appetit">
-                </a>
-            </div>
-            <nav class="menu">
-                <ul class="nav-links">
-                    <li><a href="./recipes.html">Recipes</a></li>
-                    <li><a href="./chefs.html">Chefs</a></li>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./about_us.html">About us</a></li>
-                    <li><a class="btn" href="./contact.html"><button>Contact</button></a></li>
-                </ul>
-            </nav>
-            <a class="btn btn_menu" id="btn_menu">
-                <i class="fa-solid fa-bars"></i>
+{% block main %}
+<main>
+    <h1 class="titulo_animado">Lunch</h1>
+    <section class="contenedor_de_enlaces_01">
+        <div class="enlace_a_receta">
+            <a href="{% url 'chickpea_salad' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/lunch/Receta_1.1_chico.png' %}"
+                    alt="Chickpea Salad square image" />
+                <p>Chickpea Salad</p>
             </a>
-            <div class="lista_menu oculto" id="lista_menu">
-                <ul>
-                    <li><a href="./recipes.html">Recipes</a></li>
-                    <li><a href="./chefs.html">Chefs</a></li>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./about_us.html">About us</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </header>
-        <main>
-                <h1 class="titulo_animado">Lunch</h1>
-                <section class="contenedor_de_enlaces_01">
-                    <div class="enlace_a_receta">
-                        <a href="./chickpea_salad.html"> <img class="imagen_del_enlace" src="../media/image/lunch/Receta_1.1_chico.png" alt="Chickpea Salad square image"/> <p>Chickpea Salad</p> </a>
-                    </div>
-                    <div class="enlace_a_receta">
-                        <a href="./vegetable_and_egg_tart.html"> <img class="imagen_del_enlace" src="../media/image/lunch/Receta_2.1_chico.png" alt="Vegetable and Egg Tart square image"/> <p>Vegetable and Egg Tart</p> </a>
-                    </div>
-                    <div class="enlace_a_receta">
-                        <a href="./chicken_chaufa.html"> <img class="imagen_del_enlace" src="../media/image/lunch/Receta_3.1_chico.png" alt="Chicken Chaufasquare image"/> <p>Chicken Chaufa</p> </a>
-                    </div>
-                </section>
-            <br>
+        </div>
+        <div class="enlace_a_receta">
+            <a href="{% url 'vegetable_and_egg_tart' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/lunch/Receta_2.1_chico.png' %}"
+                    alt="Vegetable and Egg Tart square image" />
+                <p>Vegetable and Egg Tart</p>
+            </a>
+        </div>
+        <div class="enlace_a_receta">
+            <a href="{% url 'chicken_chaufa' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/lunch/Receta_3.1_chico.png' %}"
+                    alt="Chicken Chaufasquare image" />
+                <p>Chicken Chaufa</p>
+            </a>
+        </div>
+    </section>
+    <br>
 
-            <section class="contenedor_de_enlaces_01">
-                <div class="enlace_a_receta">
-                    <a href="./Broccoli_soup.html"> <img class="imagen_del_enlace" src="../media/image/lunch/Receta_4.1_chico.png" alt="Broccoli Soup square image"/> <p>Broccoli Soup </p> </a>
-                </div>
-                <div class="enlace_a_receta">
-                    <a href="./Lentil_and_Oat_Burgers.html"> <img class="imagen_del_enlace" src="../media/image/lunch/Receta_5.1_chico.png" alt="Lentil and Oat Burgerssquare image"/> <p>Lentil and Oat Burgers</p> </a>
-                </div>
-                <div class="enlace_a_receta">
-                    <a href="./Mushroom-Stuffed_Eggplant.html"> <img class="imagen_del_enlace" src="../media/image/lunch/Receta_6.1_chico.png" alt="Mushroom-Stuffed Eggplant square image"/> <p>Mushroom-Stuffed Eggplant </p> </a>
-                </div>
-            </section>
-            <div id="go-to">
-                <a href="./recipes.html"> Go to Recipes</a>
-            </div>
-            <div>
-                <h2>More recipes</h2>
-            </div>
-            <section class="contenedor_de_enlaces_01">                 
-                <div class="enlace_a_receta">
-                    <a href="./brownie_healty_and_fit.html"> <img class="imagen_del_enlace" src="../media/image/dessert/brownie_fit_02_chico.jpg" alt="brownie healty and fit square image"/> <p>Brownie healty and fit</p></a>
-                </div>
-                <div class="enlace_a_receta">
-                    <a href="./Raw_chocolate_hazelnut_breakfast.html"> <img class="imagen_del_enlace" src="../media/image/breakfast/chocolate_hazelnut_chico.jpg" alt="chocolate hazelnut square image"/> <p>Raw chocolate hazelnut breakfast parfait</p></a>
-                </div>
-                <div class="enlace_a_receta">
-                    <a href="./Sugar_free_apple_pie_chia_seed_jam.html"> <img class="imagen_del_enlace" src="../media/image/breakfast/applepiejam_chico.jpg" alt="apple pie jam square image"/> <p>Sugar-free apple pie chia seed jam + parfait</p></a>
-                </div>
-            </section>
-        </main>
-        <br>
-        <footer class="footer-distributed">
-    
-            <div class="footer-left">
-                <a href="../index.html">
-                <img id="logo" src="../media/image/a_logo_Appetit.png" alt="Logo Appetit" height="76px" width="250"/></a>  <!-- Al hacer click en el logo se redirige al home -->
-    
-                <p class="footer-links">
-                    <a href="../index.html" target="_blank">Home</a>
-                    |
-                    <a href="../pages/about_us.html" target="_blank">About us</a>
-                    |
-                    <a href="../pages/contact.html" target="_blank">Contact</a>
-                    |
-                    <a href="../pages/chefs.html" target="_blank">Chefs</a>
-                </p>
-    
-                <p class="footer-company-name">Copyright © 2023 <strong>Appetit</strong> All rights reserved</p>
-            </div>
-    
-            <div class="footer-center">
-                <div>
-                    <a href="https://maps.app.goo.gl/ZTRZAVtwbNtC2FCt8" target="_blank"> <i class="fa-solid fa-location-dot" style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
-                    <p><span>Argentina</span> Buenos Aires</p>
-                </div>
-    
-                <div>
-                    <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"> <i class="fa-brands fa-whatsapp" style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
-                    <p><span>WhatsApp</span>+54 3835784512</p>
-                </div>
-    
-                <div>
-                    <a href="https://www.gmail.com" target="_blank"> <i class="fa-solid fa-envelope" style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
-                    <p><a href="https://mail.google.com/">appetit@gmail.com</a></p>
-                </div>
-            </div>
-            <div class="footer-right">
-    <p class="footer-company-about">
-        <span>About the company</span>
-        If you want to know more about us or our restaurant, do not hesitate to contact us.
-    </p>
-    <div class="footer-icons">
-        <a href="https://www.facebook.com" target="_blank"><img src="../media/social-media/facebook.png" style="width: 38px; height: 38px;"></a>
-        <a href="https://www.instagram.com" target="_blank"><img src="../media/social-media/instagram.webp" style="width: 38px; height: 38px;"></a>
-        <a href="https://www.linkedin.com" target="_blank"><img src="../media/social-media/linkedin.png" style="width: 38px; height: 38px;"></a>
-        <a href="https://www.twitter.com" target="_blank"><img src="../media/social-media/twitter.png" style="width: 38px; height: 38px;"></a>
-        <a href="https://www.youtube.com" target="_blank"><img src="../media/social-media//utube.png" style="width: 38px; height: 38px;"></a>
+    <section class="contenedor_de_enlaces_01">
+        <div class="enlace_a_receta">
+            <a href="{% url 'broccoli_soup' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/lunch/Receta_4.1_chico.png' %}"
+                    alt="Broccoli Soup square image" />
+                <p>Broccoli Soup </p>
+            </a>
+        </div>
+        <div class="enlace_a_receta">
+            <a href="{% url 'lentil_and_oat_burgers' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/lunch/Receta_5.1_chico.png' %}"
+                    alt="Lentil and Oat Burgerssquare image" />
+                <p>Lentil and Oat Burgers</p>
+            </a>
+        </div>
+        <div class="enlace_a_receta">
+            <a href="{% url 'mushroom_stuffed_eggplant' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/lunch/Receta_6.1_chico.png' %}"
+                    alt="Mushroom-Stuffed Eggplant square image" />
+                <p>Mushroom-Stuffed Eggplant </p>
+            </a>
+        </div>
+    </section>
+    <div id="go-to">
+        <a href="{% url 'recipes' %}">
+            Go to Recipes
+        </a>
     </div>
+    <div>
+        <h2>More recipes</h2>
     </div>
-            </div>
-            </div>
-        </footer>
-    </body>
-</html>
-<script src="../assets/js/index.js"></script>
+    <section class="contenedor_de_enlaces_01">
+        <div class="enlace_a_receta">
+            <a href="{% url 'brownie_healty_and_fit' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/dessert/brownie_fit_02_chico.jpg' %}"
+                    alt="brownie healty and fit square image" />
+                <p>Brownie healty and fit</p>
+            </a>
+        </div>
+        <div class="enlace_a_receta">
+            <a href="{% url 'raw_chocolate_hazelnut_breakfast' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/breakfast/chocolate_hazelnut_chico.jpg' %}"
+                    alt="chocolate hazelnut square image" />
+                <p>Raw chocolate hazelnut breakfast parfait</p>
+            </a>
+        </div>
+        <div class="enlace_a_receta">
+            <a href="{% url 'sugar_free_apple_pie_chia_seed_jam' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/breakfast/applepiejam_chico.jpg' %}"
+                    alt="apple pie jam square image" />
+                <p>Sugar-free apple pie chia seed jam + parfait</p>
+            </a>
+        </div>
+    </section>
+</main>
+{% endblock %}
