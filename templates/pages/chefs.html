@@ -1,216 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+{% load static %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chefs</title>
-
-    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
-    <link rel="icon" type="image/x-icon" href="../media/icons/appetit.ico">
-
-    <meta property="og:title" content="Appetit" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://www.Appetit.com/" />
-    <meta property="og:image" content="../assets/media/image/a_logo_Appetit.jpg" />
-    <meta property="og:description" content="Appetit - Healthy recipes" />
-
-    <script src="https://kit.fontawesome.com/a6d1c73a06.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <header class="header">
-        <div class="logo">
-            <a href="../index.html">
-                <img src="{% static './image/a_logo_Appetit.png' %}" alt="Logo Appetit">
+{% block main %}
+<main>
+    <h1 class="titulo_animado">Chefs</h1>
+    <h2>Chef Valentina</h2>
+    <div class="imagen_chefs">
+        <img class="foto_chef" src="{% static './img/image/chefs/valentina.jpg' %}" alt="Foto chef Valentina" />
+    </div>
+    <section class="texto_chefs">
+        <div class="cuerpo_chefs">
+            <p>Meet Chef Valentina, a culinary virtuoso with an unwavering dedication to crafting
+                dishes that embrace the essence of health and taste. Her culinary journey began as
+                a quest to redefine traditional flavors into nourishing creations that delight the
+                palate and uplift the spirit. <br>
+                Drawing inspiration from her deep connection to organic ingredients, Chef Valentina's
+                experience includes working alongside world-class chefs who share her commitment to
+                responsible sourcing and sustainable practices. Her background in nutrition and culinary
+                arts intertwines seamlessly, allowing her to curate menus that are both indulgent and
+                health-conscious.From vibrant vegan delights to meticulously balanced protein-rich dishes,
+                Chef Valentina's creations resonate with her belief that food is a celebration of life.
+                Her mastery lies not only in her exquisite pairings but also in her ability to infuse each
+                plate with a genuine passion for wellness. <br>
+                As a co-founder of "Appetit", Chef Valentina invites you to partake in a culinary voyage
+                where flavors come alive, and nourishment takes center stage. Her culinary philosophy
+                resonates throughout the menu, offering an array of choices that honor the harmony between
+                health and gastronomy. Discover the extraordinary touch of Chef Valentina's culinary artistry at
+                "Appetit".
+                Join us to relish in a symphony of flavors that embody the heart and soul of wholesome dining.</p>
+        </div>
+    </section>
+    <div>
+        <h3>Recipes of the Chef</h3>
+    </div>
+    <section class="contenedor_de_enlaces_01">
+        <div class="enlace_a_receta">
+            <a href="{% url 'chickpea_salad' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/lunch/Receta_1.1_chico.png' %}"
+                    alt="Chickpea Saladsquare image" />
+                <p>Chickpea Salad</p>
             </a>
         </div>
-        <nav class="menu">
-            <ul class="nav-links">
-                <li><a href="./recipes.html">Recipes</a></li>
-                <li><a href="./chefs.html">Chefs</a></li>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./about_us.html">About us</a></li>
-                <li><a class="btn" href="./contact.html"><button>Contact</button></a></li>
-            </ul>
-        </nav>
-        <a class="btn btn_menu" id="btn_menu">
-            <i class="fa-solid fa-bars"></i>
-        </a>
-        <div class="lista_menu oculto" id="lista_menu">
-            <ul>
-                <li><a href="./recipes.html">Recipes</a></li>
-                <li><a href="./chefs.html">Chefs</a></li>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./about_us.html">About us</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
+        <div class="enlace_a_receta">
+            <a href="{% url 'vegetable_and_egg_tart' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/lunch/Receta_2.1_chico.png' %}"
+                    alt="Vegetable and Egg Tart square image" />
+                <p>Vegetable and Egg Tart</p>
+            </a>
         </div>
-    </header>
-    <main>
-        <h1 class="titulo_animado">Chefs</h1>
-        <h2>Chef Valentina</h2>
-        <div class="imagen_chefs">
-            <img class="foto_chef" src="{% static './image/chefs/valentina.jpg' %}" alt="Foto chef Valentina" />
+        <div class="enlace_a_receta">
+            <a href="{% url 'chicken_chaufa' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/lunch/Receta_3.1_chico.png' %}"
+                    alt="Chicken Chaufa square image" />
+                <p>Chicken Chaufa</p>
+            </a>
         </div>
-        <section class="texto_chefs">
-            <div class="cuerpo_chefs">
-                <p>Meet Chef Valentina, a culinary virtuoso with an unwavering dedication to crafting
-                    dishes that embrace the essence of health and taste. Her culinary journey began as
-                    a quest to redefine traditional flavors into nourishing creations that delight the
-                    palate and uplift the spirit. <br>
-                    Drawing inspiration from her deep connection to organic ingredients, Chef Valentina's
-                    experience includes working alongside world-class chefs who share her commitment to
-                    responsible sourcing and sustainable practices. Her background in nutrition and culinary
-                    arts intertwines seamlessly, allowing her to curate menus that are both indulgent and
-                    health-conscious.From vibrant vegan delights to meticulously balanced protein-rich dishes,
-                    Chef Valentina's creations resonate with her belief that food is a celebration of life.
-                    Her mastery lies not only in her exquisite pairings but also in her ability to infuse each
-                    plate with a genuine passion for wellness. <br>
-                    As a co-founder of "Appetit", Chef Valentina invites you to partake in a culinary voyage
-                    where flavors come alive, and nourishment takes center stage. Her culinary philosophy
-                    resonates throughout the menu, offering an array of choices that honor the harmony between
-                    health and gastronomy. Discover the extraordinary touch of Chef Valentina's culinary artistry at
-                    "Appetit".
-                    Join us to relish in a symphony of flavors that embody the heart and soul of wholesome dining.</p>
-            </div>
-        </section>
-        <div>
-            <h3>Recipes of the Chef</h3>
+    </section>
+    <h2>Chef Santiago</h2>
+    <div class="imagen_chefs">
+        <img class="foto_chef" src="{% static './img/image/chefs/santiago.jpg' %}" alt="Foto chef Santiago" />
+    </div>
+    <section class="texto_chefs">
+        <div class="cuerpo_chefs">
+            <p>With a passion for the culinary arts that spans over two decades,
+                Chef Santiago is a seasoned professional renowned for his innovative
+                and flavorful creations. His journey began in prestigious kitchens
+                across Europe, where he honed his skills under the guidance of renowned chefs,
+                blending traditional techniques with modern gastronomy. <br>
+                Having crafted delectable dishes in Michelin-starred restaurants,
+                Chef Santiago's expertise is a fusion of artistry and precision.
+                His commitment to using locally-sourced, seasonal ingredients results
+                in dishes that celebrate both taste and health. From his signature
+                Mediterranean-inspired salads to exquisitely grilled entrées, each plate
+                showcases his dedication to crafting balanced, vibrant cuisine. <br>
+                Chef Santiago's culinary prowess is not confined to the kitchen; his
+                leadership has guided teams to deliver exceptional dining experiences.
+                His unwavering dedication to quality and creativity has earned him a
+                reputation as a trailblazer in the world of healthy gastronomy. <br>
+                Now, as a co-founder of "Appetit" Chef Santiago invites you to embark
+                on a journey of flavors that ignite the senses and nourish the soul.
+                With a focus on delivering both exquisite taste and nutritional value,
+                his dishes reflect a deep-rooted passion for culinary excellence that's
+                evident in every bite. Join us at "Appetit" and savor the distinctive
+                touch of Chef Santiago's culinary brilliance.</p>
         </div>
-        <section class="contenedor_de_enlaces_01">
-            <div class="enlace_a_receta"> <a href="./chickpea_salad.html"> <img class="imagen_del_enlace"
-                        src="{% static './image/lunch/Receta_1.1_chico.png' %}" alt="Chickpea Saladsquare image" />
-                    <p>Chickpea Salad</p>
-                </a>
-            </div>
-            <div class="enlace_a_receta"> <a href="./vegetable_and_egg_tart.html"> <img class="imagen_del_enlace"
-                        src="{% static './image/lunch/Receta_2.1_chico.png' %}"
-                        alt="Vegetable and Egg Tart square image" />
-                    <p>Vegetable and Egg Tart</p>
-                </a>
-            </div>
-            <div class="enlace_a_receta"> <a href="./chicken_chaufa.html"> <img class="imagen_del_enlace"
-                        src="{% static './image/lunch/Receta_3.1_chico.png' %}" alt="Chicken Chaufa square image" />
-                    <p>Chicken Chaufa</p>
-                </a>
-            </div>
-        </section>
-        <h2>Chef Santiago</h2>
-        <div class="imagen_chefs">
-            <img class="foto_chef" src="{% static './image/chefs/santiago.jpg' %}" alt="Foto chef Santiago" />
+    </section>
+    <div>
+        <h3>Recipes of the Chef</h3>
+    </div>
+    <section class="contenedor_de_enlaces_01">
+        <div class="enlace_a_receta">
+            <a href="{% url 'chocolate_raspberry_dreams_breakfast_parfait' %}"> <img class="imagen_del_enlace"
+                    src="{% static './img/image/breakfast/chocolate_raspberry_chico.jpg' %}"
+                    alt="chocolate raspberry square image" />
+                <p>Chocolate raspberry dreams breakfast parfait</p>
+            </a>
         </div>
-        <section class="texto_chefs">
-            <div class="cuerpo_chefs">
-                <p>With a passion for the culinary arts that spans over two decades,
-                    Chef Santiago is a seasoned professional renowned for his innovative
-                    and flavorful creations. His journey began in prestigious kitchens
-                    across Europe, where he honed his skills under the guidance of renowned chefs,
-                    blending traditional techniques with modern gastronomy. <br>
-                    Having crafted delectable dishes in Michelin-starred restaurants,
-                    Chef Santiago's expertise is a fusion of artistry and precision.
-                    His commitment to using locally-sourced, seasonal ingredients results
-                    in dishes that celebrate both taste and health. From his signature
-                    Mediterranean-inspired salads to exquisitely grilled entrées, each plate
-                    showcases his dedication to crafting balanced, vibrant cuisine. <br>
-                    Chef Santiago's culinary prowess is not confined to the kitchen; his
-                    leadership has guided teams to deliver exceptional dining experiences.
-                    His unwavering dedication to quality and creativity has earned him a
-                    reputation as a trailblazer in the world of healthy gastronomy. <br>
-                    Now, as a co-founder of "Appetit" Chef Santiago invites you to embark
-                    on a journey of flavors that ignite the senses and nourish the soul.
-                    With a focus on delivering both exquisite taste and nutritional value,
-                    his dishes reflect a deep-rooted passion for culinary excellence that's
-                    evident in every bite. Join us at "Appetit" and savor the distinctive
-                    touch of Chef Santiago's culinary brilliance.</p>
-            </div>
-        </section>
-        <div>
-            <h3>Recipes of the Chef</h3>
+        <div class="enlace_a_receta">
+            <a href="{% url 'flourless_bite_sized_breakfast_muffins' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/breakfast/muffins_chico.jpg' %}"
+                    alt="muffins square image" />
+                <p>Flourless bite-sized breakfast muffins</p>
+            </a>
         </div>
-        <section class="contenedor_de_enlaces_01">
-            <div class="enlace_a_receta">
-                <a href="./chocolate_raspberry_dreams_breakfast_parfait.html"> <img class="imagen_del_enlace"
-                        src="../media/image/breakfast/chocolate_raspberry_chico.jpg"
-                        alt="chocolate raspberry square image" />
-                    <p>Chocolate raspberry dreams breakfast parfait</p>
-                </a>
-            </div>
-            <div class="enlace_a_receta">
-                <a href="./Flourless_bite_sized_breakfast_muffins.html"> <img class="imagen_del_enlace"
-                        src="../media/image/breakfast/muffins_chico.jpg" alt="muffins square image" />
-                    <p>Flourless bite-sized breakfast muffins</p>
-                </a>
-            </div>
-            <div class="enlace_a_receta">
-                <a href="./High_protein_vegan_breakfast_burrito.html"> <img class="imagen_del_enlace"
-                        src="../media/image/breakfast/burrito_chico.jpg" alt="burrito square image" />
-                    <p>High protein vegan breakfast burrito</p>
-                </a>
-            </div>
-        </section>
-    </main>
-    <footer class="footer-distributed">
-
-        <div class="footer-left">
-            <a href="../index.html">
-                <img id="logo" src="../media/image/a_logo_Appetit.png" alt="Logo Appetit" height="76px"
-                    width="250" /></a> <!-- Al hacer click en el logo se redirige al home -->
-
-            <p class="footer-links">
-                <a href="../index.html" target="_blank">Home</a>
-                |
-                <a href="../pages/about_us.html" target="_blank">About us</a>
-                |
-                <a href="../pages/contact.html" target="_blank">Contact</a>
-                |
-                <a href="../pages/chefs.html" target="_blank">Chefs</a>
-            </p>
-
-            <p class="footer-company-name">Copyright © 2023 <strong>Appetit</strong> All rights reserved</p>
+        <div class="enlace_a_receta">
+            <a href="{% url 'high_protein_vegan_breakfast_burrito' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/breakfast/burrito_chico.jpg' %}"
+                    alt="burrito square image" />
+                <p>High protein vegan breakfast burrito</p>
+            </a>
         </div>
-
-        <div class="footer-center">
-            <div>
-                <a href="https://maps.app.goo.gl/ZTRZAVtwbNtC2FCt8" target="_blank"> <i class="fa-solid fa-location-dot"
-                        style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
-                <p><span>Argentina</span> Buenos Aires</p>
-            </div>
-
-            <div>
-                <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"> <i class="fa-brands fa-whatsapp"
-                        style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
-                <p><span>WhatsApp</span>+54 3835784512</p>
-            </div>
-
-            <div>
-                <a href="https://www.gmail.com" target="_blank"> <i class="fa-solid fa-envelope"
-                        style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
-                <p><a href="https://mail.google.com/">appetit@gmail.com</a></p>
-            </div>
-        </div>
-        <div class="footer-right">
-            <p class="footer-company-about">
-                <span>About the company</span>
-                If you want to know more about us or our restaurant, do not hesitate to contact us.
-            </p>
-            <div class="footer-icons">
-                <a href="https://www.facebook.com" target="_blank"><img src="../media/social-media/facebook.png"
-                        style="width: 38px; height: 38px;"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="../media/social-media/instagram.webp"
-                        style="width: 38px; height: 38px;"></a>
-                <a href="https://www.linkedin.com" target="_blank"><img src="../media/social-media/linkedin.png"
-                        style="width: 38px; height: 38px;"></a>
-                <a href="https://www.twitter.com" target="_blank"><img src="../media/social-media/twitter.png"
-                        style="width: 38px; height: 38px;"></a>
-                <a href="https://www.youtube.com" target="_blank"><img src="../media/social-media//utube.png"
-                        style="width: 38px; height: 38px;"></a>
-            </div>
-        </div>
-        </div>
-        </div>
-    </footer>
-</body>
-
-</html>
-<script src="../assets/js/index.js"></script>
+    </section>
+</main>
+{% endblock %}
