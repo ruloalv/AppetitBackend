@@ -29,11 +29,11 @@
         </div>
         <nav class="menu">
             <ul class="nav-links">
-                <li><a href="./pages/recipes.html">Recipes</a></li>
-                <li><a href="./pages/chefs.html">Chefs</a></li>
-                <li><a href="./index.html">Home</a></li>
+                <li><a href="{% url 'recipes' %}">Recipes</a></li>
+                <li><a href="{% url 'chefs' %}">Chefs</a></li>
+                <li><a href="{% url 'index' %}">Home</a></li>
                 <li><a href="{% url 'about_us' %}">About us</a></li>
-                <li><a class="btn" href="./pages/contact.html"><button>Contact</button></a></li>
+                <li><a class="btn" href="{% url 'contact' %}"><button>Contact</button></a></li>
             </ul>
         </nav>
         <a class="btn btn_menu" id="btn_menu">
@@ -41,11 +41,11 @@
         </a>
         <div class="lista_menu oculto" id="lista_menu">
             <ul>
-                <li><a href="./pages/recipes.html">Recipes</a></li>
-                <li><a href="./pages/chefs.html">Chefs</a></li>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./pages/about_us.html">About us</a></li>
-                <li><a href="./pages/contact.html">Contact</a></li>
+                <li><a href="{% url 'recipes' %}">Recipes</a></li>
+                <li><a href="{% url 'chefs' %}">Chefs</a></li>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'about_us' %}">About us</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -56,18 +56,18 @@
 
     <footer class="footer-distributed">
         <div class="footer-left">
-            <a href="../index.html"> <img id="logo" src="{% static './img/image/a_logo_Appetit.png' %}"
+            <a href="{% url 'index' %}"> <img id="logo" src="{% static './img/image/a_logo_Appetit.png' %}"
                     alt="Logo Appetit" /></a>
             <!-- Al hacer click en el logo se redirige al home -->
 
             <div class="footer-links">
-                <a href="./index.html">Home</a>
+                <a href="{% url 'index' %}">Home</a>
                 |
-                <a href="./pages/about_us.html" target="_blank">About us</a>
+                <a href="{% url 'about_us' %}" target="_blank">About us</a>
                 |
-                <a href="./pages/contact.html" target="_blank">Contact</a>
+                <a href="{% url 'contact' %}" target="_blank">Contact</a>
                 |
-                <a href="./pages/chefs.html" target="_blank">Chefs</a>
+                <a href="{% url 'chefs' %}" target="_blank">Chefs</a>
             </div>
 
             <p class="footer-company-name">Copyright © 2023 <strong>Appetit</strong> All rights reserved</p>

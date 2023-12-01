@@ -13,7 +13,7 @@
                     result of years of love for cooking, experimentation, and the desire
                     to take your home-cooked meals to the next level.
                 </p>
-                <a href="./pages/about_us.html" class="btn-1">About us</a>
+                <a href="{% url 'about_us' %}" class="btn-1">About us</a>
             </div>
             <div class="header-img">
                 <img src="{% static './img/image/home/ensalada-1.png' %}" alt="Imagen de ensalada">
@@ -45,7 +45,7 @@
     <section class="products container">
 
         <div class="enlaces_a_secciones">
-            <a href="./pages/breakfast.html">
+            <a href="{% url 'breakfast' %}">
                 <h2>Breakfast</h2>
             </a>
         </div>
@@ -53,7 +53,7 @@
 
         <div class="product-info">
             <div class="product">
-                <a href="./pages/chocolate_raspberry_dreams_breakfast_parfait.html">
+                <a href="{% url 'chocolate_raspberry_dreams_breakfast_parfait' %}">
                     <img src="{% static './img/image/breakfast/chocolate_raspberry_chico.jpg' %}"
                         alt="Chocolate raspberry">
                     <h3>Chocolate raspberry dreams breakfast parfait</h3>
@@ -64,22 +64,22 @@
                     raspberries, offering a blend rich in antioxidants,
                     fiber, and proteins.
                 </p>
-                <a href="./pages/chocolate_raspberry_dreams_breakfast_parfait.html"><span>Ver receta</span></a>
+                <a href="{% url 'chocolate_raspberry_dreams_breakfast_parfait' %}"><span>Ver receta</span></a>
             </div>
 
             <div class="product">
-                <a href="./pages/Flourless_bite_sized_breakfast_muffins.html">
+                <a href="{% url 'flourless_bite_sized_breakfast_muffins' %}">
                     <img src="{% static './img/image/breakfast/muffins_chico.jpg' %}" alt="muffins">
                     <h3>Flourless bite-sized muffins</h3>
                 </a>
                 <p>
                     They can provide satiety, gluten-free options,
                     and portion control for a balanced diet.</p>
-                <a href="./pages/Flourless_bite_sized_breakfast_muffins.html"><span>Ver receta</span></a>
+                <a href="{% url 'flourless_bite_sized_breakfast_muffins' %}"><span>Ver receta</span></a>
             </div>
 
             <div class="product">
-                <a href="./pages/High_protein_vegan_breakfast_burrito.html">
+                <a href="{% url 'high_protein_vegan_breakfast_burrito' %}">
                     <img src=" {% static './img/image/breakfast/burrito_chico.jpg' %}" alt="burrito">
                     <h3>High protein vegan breakfast <br> burrito</h3>
                 </a>
@@ -87,12 +87,12 @@
                     Eating a high-protein vegan breakfast burrito
                     can provide
                     sustained energy and support muscle health. </p>
-                <a href="./pages/High_protein_vegan_breakfast_burrito.html"><span>Ver receta</span></a>
+                <a href="{% url 'high_protein_vegan_breakfast_burrito' %}"><span>Ver receta</span></a>
             </div>
         </div>
 
         <div class="enlaces_a_secciones">
-            <a href="./pages/lunch.html">
+            <a href="{% url 'lunch' %}">
                 <h2>Lunch</h2>
             </a>
         </div>
@@ -100,7 +100,7 @@
 
         <div class="product-info">
             <div class="product">
-                <a href="./pages/chickpea_salad.html">
+                <a href="{% url 'chickpea_salad' %}">
                     <img src="{% static './img/image/lunch/Receta_1.1_chico.png' %}" alt="Chickpea Salad">
                     <h3>Chickpea Salad</h3>
                 </a>
@@ -109,14 +109,14 @@
                     and fiber content,
                     promoting satiety and digestive health </p>
 
-                <a href="./pages/chickpea_salad.html">
+                <a href="{% url 'chickpea_salad' %}">
                     <span>Ver receta</span>
                 </a>
 
             </div>
 
             <div class="product">
-                <a href="./pages/vegetable_and_egg_tart.html">
+                <a href="{% url 'vegetable_and_egg_tart' %}">
                     <img src="{% static './img/image/lunch/Receta_2.1_chico.png' %}" alt="Vegetable and Egg Tart">
                     <h3>Vegetable and Egg Tart</h3>
                 </a>
@@ -125,13 +125,13 @@
                     vegetables,
                     offering a satisfying and nutritious meal
                 </p>
-                <a href="./pages/vegetable_and_egg_tart.html">
+                <a href="{% url 'vegetable_and_egg_tart' %}">
                     <span>Ver receta</span>
                 </a>
             </div>
 
             <div class="product">
-                <a href="./pages/chicken_chaufa.html">
+                <a href="{% url 'chicken_chaufa' %}">
                     <img src="{% static './img/image/lunch/Receta_3.1_chico.png' %}" alt="Chicken Chaufa">
                     <h3>Chicken Chaufa</h3>
                 </a>
@@ -139,20 +139,20 @@
                     Offers a delicious blend of protein and
                     vegetables, delivering a savory and fulfilling meal.
                 </p>
-                <a href="./pages/chicken_chaufa.html">
+                <a href="{% url 'chicken_chaufa' %}">
                     <span>Ver receta</span>
                 </a>
             </div>
         </div>
 
-        <div class="enlaces_a_secciones"> <a href="./pages/dessert.html">
+        <div class="enlaces_a_secciones"> <a href="{% url 'dessert' %}">
                 <h2>Dessert</h2>
             </a>
         </div>
 
         <div class="product-info">
             <div class="product">
-                <a href="./pages/strawberry_and_kiwi_bons.html">
+                <a href="{% url 'strawberry_and_kiwi_bons' %}">
                     <img src="{% static './img/image/dessert/strawberry_kiwi_bons_chico.jpg' %}"
                         alt="strawberry and kiwi bons square image">
                     <h3>Strawberry and kiwi bons with chocolate</h3>
@@ -162,14 +162,14 @@
                     antioxidants, making for a
                     tasty and healthful treat.
                 </p>
-                <a href="./pages/strawberry_and_kiwi_bons.html">
+                <a href="{% url 'strawberry_and_kiwi_bons' %}">
                     <span>Ver receta</span>
                 </a>
             </div>
 
 
             <div class="product">
-                <a href="./pages/Apple_flan.html">
+                <a href="{% url 'apple_flan' %}">
                     <img src="{% static './img/image/dessert/apple_flan_chico.jpg' %}" alt="apple flan square image">
                     <h3>Apple flan</h3>
                 </a>
@@ -178,13 +178,13 @@
                     enriched with fiber and
                     vitamins from the apples.
                 </p>
-                <a href="./pages/Apple_flan.html">
+                <a href="{% url 'apple_flan' %}">
                     <span>Ver receta</span>
                 </a>
             </div>
 
             <div class="product">
-                <a href="./pages/Healthy_tres_leches_cake.html">
+                <a href="{% url 'healthy_tres_leches_cake' %}">
                     <img src="{% static './img/image/dessert/tres_leches_chico.jpg' %}"
                         alt="healty tres leches square image">
                     <h3>Healty tres leches cake</h3>
@@ -194,7 +194,7 @@
                     sugar
                     and fat content while maintaining rich flavor.
                 </p>
-                <a href="./pages/Healthy_tres_leches_cake.html">
+                <a href="{% url 'healthy_tres_leches_cake' %}">
                     <span>Ver receta</span>
                 </a>
             </div>
@@ -218,7 +218,7 @@
                     So join us on this exciting culinary adventure. The kitchen is our
                     canvas and food is our form of expression.
                 </p>
-                <a href="./pages/contact.html" class="btn-1">Contact</a>
+                <a href="{% url 'contact' %}" class="btn-1">Contact</a>
             </div>
         </div>
     </section>
