@@ -6,7 +6,7 @@
     <section>
         <h1 class="titulo_animado">Apple flan</h1>
         <div class="foto_receta">
-            <img class="imagen_de_receta" src="../media/image/dessert/apple_flan_01.jpg"
+            <img class="imagen_de_receta" src="{% static './img/image/dessert/apple_flan_01.jpg' %}"
                 alt="apple flan presentation" />
         </div>
         <div class="receta_primera_parte">
@@ -34,7 +34,8 @@
             </div>
         </div>
         <div class="foto_receta">
-            <img class="imagen_de_receta" src="../media/image/dessert/apple_flan_03.jpg" alt="apple flan process" />
+            <img class="imagen_de_receta" src="{% static './img/image/dessert/apple_flan_03.jpg' %}"
+                alt="apple flan process" />
         </div>
         <div class="receta_segunda_parte">
             <div class="cuerpo">
@@ -59,7 +60,9 @@
             </div>
         </div>
         <div id="go-to">
-            <a href="dessert.html"> Go to dessert</a>
+            <a href="{% url 'dessert' %}">
+                Go to dessert
+            </a>
         </div>
     </section>
     <div>
@@ -67,20 +70,23 @@
     </div>
     <section class="contenedor_de_enlaces_01">
         <div class="enlace_a_receta">
-            <a href="./Flourless_bite_sized_breakfast_muffins.html"> <img class="imagen_del_enlace"
-                    src="../media/image/breakfast/muffins_chico.jpg" alt="muffins square image" />
+            <a href="{% url 'flourless_bite_sized_breakfast_muffins' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/breakfast/muffins_chico.jpg' %}"
+                    alt="muffins square image" />
                 <p>Flourless bite-sized breakfast muffins</p>
             </a>
         </div>
         <div class="enlace_a_receta">
-            <a href="./chickpea_salad.html"> <img class="imagen_del_enlace"
-                    src="../media/image/lunch/Receta_1.1_chico.png" alt="Chickpea Salad square image" />
+            <a href="{% url 'chickpea_salad' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/lunch/Receta_1.1_chico.png' %}"
+                    alt="Chickpea Salad square image" />
                 <p>Chickpea Salad</p>
             </a>
         </div>
         <div class="enlace_a_receta">
-            <a href="./banana_protein_cookies.html"> <img class="imagen_del_enlace"
-                    src="../media/image/dessert/banana_cookies_03_chico.jpg" alt="banana cookies square image" />
+            <a href="{% url 'banana_protein_cookies' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/dessert/banana_cookies_03_chico.jpg' %}"
+                    alt="banana cookies square image" />
                 <p>Banana protein cookies</p>
             </a>
         </div>

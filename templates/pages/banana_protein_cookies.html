@@ -1,172 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Banana protein cookies</title>
+{% extends "base.html" %}
+{% load static %}
 
-        <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
-        <link rel="icon" type="image/x-icon" href="../media/icons/appetit.ico">
-
-        <meta property="og:title" content="Appetit"/>
-        <meta property="og:type" content="article"/>
-        <meta property="og:url" content="https://www.Appetit.com/"/>
-        <meta property="og:image" content="../assets/media/image/a_logo_Appetit.png"/>
-        <meta property="og:description" content="Appetit - 15 - Minute creamy avocado pasta"/>
-        
-        <script src="https://kit.fontawesome.com/a6d1c73a06.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header class="header">
-            <div class="logo">
-                <a href="../index.html">
-                    <img src="../media/image/a_logo_Appetit.png" alt="Logo Appetit">
-                </a>
-            </div>
-            <nav class="menu">
-                <ul class="nav-links">
-                    <li><a href="./recipes.html">Recipes</a></li>
-                    <li><a href="./chefs.html">Chefs</a></li>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./about_us.html">About us</a></li>
-                    <li><a class="btn" href="./contact.html"><button>Contact</button></a></li>
-                </ul>
-            </nav>
-            <a class="btn btn_menu" id="btn_menu">
-                <i class="fa-solid fa-bars"></i>
-            </a>
-            <div class="lista_menu oculto" id="lista_menu">
+{% block main %}
+<main>
+    <section>
+        <h1 class="titulo_animado">Banana protein cookies</h1>
+        <div class="foto_receta">
+            <img class="imagen_de_receta" src="{% static './img/image/dessert/banana_cookies_01.jpg' %}"
+                alt="banana presentation" />
+        </div>
+        <div class="receta_primera_parte">
+            <div class="cuerpo">
                 <ul>
-                    <li><a href="./recipes.html">Recipes</a></li>
-                    <li><a href="./chefs.html">Chefs</a></li>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./about_us.html">About us</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li>Preparation: 5 minutes</li>
+                    <li>Cooking: 15 minutes</li>
+                </ul>
+
+                <p>An afternoon cookie with a cup of coffee? Of course. This protein cookie contains 12 g of protein
+                    thanks to almond flour.<br>
+                    It is also rich in magnesium and potassium, which also makes it ideal for snacking before or after
+                    training.</p>
+
+                <p class="subtitulo">INGREDIENTS</p>
+
+                <ul>
+                    <li>1/4 of a very ripe banana</li>
+                    <li>4 tablespoons of almond flour</li>
+                    <li>1 teaspoon coconut oil or melted butter</li>
+                    <li>cinnamon</li>
+                    <li>1 teaspoon of honey (optional, if we have a very sweet tooth)</li>
+                    <li>Chocolate chips or a couple of crushed nuts.</li>
                 </ul>
             </div>
-        </header>
-        <main>
-            <section>
-                <h1 class="titulo_animado">Banana protein cookies</h1>
-                <div class="foto_receta">
-                    <img class="imagen_de_receta" src="../media/image/dessert/banana_cookies_01.jpg" alt="banana presentation"/>
-                </div>
-                <div class="receta_primera_parte">
-                    <div class="cuerpo">
-                        <ul>
-                            <li>Preparation: 5 minutes</li>
-                            <li>Cooking: 15 minutes</li>
-                        </ul>
-    
-                        <p>An afternoon cookie with a cup of coffee? Of course. This protein cookie contains 12 g of protein thanks to almond flour.<br>
-                            It is also rich in magnesium and potassium, which also makes it ideal for snacking before or after training.</p>
-    
-                        <p class="subtitulo">INGREDIENTS</p>
-    
-                        <ul>
-                            <li>1/4 of a very ripe banana</li>
-                            <li>4 tablespoons of almond flour</li>
-                            <li>1 teaspoon coconut oil or melted butter</li>
-                            <li>cinnamon</li>
-                            <li>1 teaspoon of honey (optional, if we have a very sweet tooth)</li>
-                            <li>Chocolate chips or a couple of crushed nuts.</li>
-                        </ul>
-                    </div>
-                </div>  
-                <div class="foto_receta">
-                    <img class="imagen_de_receta" src="../media/image/dessert/banana_cookies_02.jpg" alt="banana cookie process"/>
-                </div>
-                <div class="receta_segunda_parte">
-                    <div class="cuerpo">
-                        <p class="subtitulo">DIRECTIONS </p>
-                        <ol>
-                            <li>Preheat the oven to 200 degrees.</li>
-                            <li>In a bowl, mash the banana with a fork. You can use the rest of the banana.</li>
-                            <li>Freeze to make healthy ice cream.</li>
-                            <li>Add the flour, oil, cinnamon, a pinch of salt and the sweetener if you are going to use it.</li>
-                            <li>Form 2 small cookies and decorate with chocolate chips or nuts.</li>
-                            <li>Bake 15 minutes or until golden.</li>
-                        </ol>
+        </div>
+        <div class="foto_receta">
+            <img class="imagen_de_receta" src="{% static './img/image/dessert/banana_cookies_02.jpg' %}"
+                alt="banana cookie process" />
+        </div>
+        <div class="receta_segunda_parte">
+            <div class="cuerpo">
+                <p class="subtitulo">DIRECTIONS </p>
+                <ol>
+                    <li>Preheat the oven to 200 degrees.</li>
+                    <li>In a bowl, mash the banana with a fork. You can use the rest of the banana.</li>
+                    <li>Freeze to make healthy ice cream.</li>
+                    <li>Add the flour, oil, cinnamon, a pinch of salt and the sweetener if you are going to use it.</li>
+                    <li>Form 2 small cookies and decorate with chocolate chips or nuts.</li>
+                    <li>Bake 15 minutes or until golden.</li>
+                </ol>
 
-                        <p class="subtitulo">NUTRITION INFORMATION</p>
-                    
-                        <p>Calories 250 calories | Total Fat 25 grams <br>
-                           Fiber 25 grams | Protein 10 grams <br>
-                           * Nutrition data is approximate and is for informational purposes only.</p>
-                    </div>
-                </div>
-                <div id="go-to">
-                    <a href="dessert.html"> Go to dessert</a>
-                </div>
-            </section>
-            <div>
-                <h2>More recipes</h2>
-            </div>
-            <section class="contenedor_de_enlaces_01">                 
-                <div class="enlace_a_receta">
-                    <a href="./Flourless_bite_sized_breakfast_muffins.html"> <img class="imagen_del_enlace" src="../media/image/breakfast/muffins_chico.jpg" alt="muffins square image"/> <p>Flourless bite-sized breakfast muffins</p> </a>
-                </div>
-                <div class="enlace_a_receta">
-                    <a href="./chickpea_salad.html"> <img class="imagen_del_enlace" src="../media/image/lunch/Receta_1.1_chico.png" alt="Chickpea Salad"/> <p>Chickpea Salad</p> </a>
-                </div>
-                <div class="enlace_a_receta">
-                    <a href="./Apple_flan.html"> <img class="imagen_del_enlace" src="../media/image/dessert/apple_flan_chico.jpg" alt="banana cookies square image"/> <p>Apple flan</p></a>
-                </div>
-            </section>
-        </main>
-        <br>
-        <footer class="footer-distributed">
-    
-            <div class="footer-left">
-                <a href="../index.html">
-                <img id="logo" src="../media/image/a_logo_Appetit.png" alt="Logo Appetit" height="76px" width="250"/></a>  <!-- Al hacer click en el logo se redirige al home -->
-    
-                <p class="footer-links">
-                    <a href="../index.html" target="_blank">Home</a>
-                    |
-                    <a href="../pages/about_us.html" target="_blank">About us</a>
-                    |
-                    <a href="../pages/contact.html" target="_blank">Contact</a>
-                    |
-                    <a href="../pages/chefs.html" target="_blank">Chefs</a>
-                </p>
-    
-                <p class="footer-company-name">Copyright © 2023 <strong>Appetit</strong> All rights reserved</p>
-            </div>
-    
-            <div class="footer-center">
-                <div>
-                    <a href="https://maps.app.goo.gl/ZTRZAVtwbNtC2FCt8" target="_blank"> <i class="fa-solid fa-location-dot" style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
-                    <p><span>Argentina</span> Buenos Aires</p>
-                </div>
-    
-                <div>
-                    <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"> <i class="fa-brands fa-whatsapp" style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
-                    <p><span>WhatsApp</span>+54 3835784512</p>
-                </div>
-    
-                <div>
-                    <a href="https://www.gmail.com" target="_blank"> <i class="fa-solid fa-envelope" style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
-                    <p><a href="https://mail.google.com/">appetit@gmail.com</a></p>
-                </div>
-            </div>
-            <div class="footer-right">
-    <p class="footer-company-about">
-        <span>About the company</span>
-        If you want to know more about us or our restaurant, do not hesitate to contact us.
-    </p>
-    <div class="footer-icons">
-        <a href="https://www.facebook.com" target="_blank"><img src="../media/social-media/facebook.png" style="width: 38px; height: 38px;"></a>
-        <a href="https://www.instagram.com" target="_blank"><img src="../media/social-media/instagram.webp" style="width: 38px; height: 38px;"></a>
-        <a href="https://www.linkedin.com" target="_blank"><img src="../media/social-media/linkedin.png" style="width: 38px; height: 38px;"></a>
-        <a href="https://www.twitter.com" target="_blank"><img src="../media/social-media/twitter.png" style="width: 38px; height: 38px;"></a>
-        <a href="https://www.youtube.com" target="_blank"><img src="../media/social-media//utube.png" style="width: 38px; height: 38px;"></a>
-    </div>
-    </div>
-            </div>
-            </div>
-        </footer>
-    </body>
-</html>
+                <p class="subtitulo">NUTRITION INFORMATION</p>
 
-<script src="../assets/js/index.js"></script>
+                <p>Calories 250 calories | Total Fat 25 grams <br>
+                    Fiber 25 grams | Protein 10 grams <br>
+                    * Nutrition data is approximate and is for informational purposes only.</p>
+            </div>
+        </div>
+        <div id="go-to">
+            <a href="{% url 'dessert' %}">
+                Go to dessert
+            </a>
+        </div>
+    </section>
+    <div>
+        <h2>More recipes</h2>
+    </div>
+    <section class="contenedor_de_enlaces_01">
+        <div class="enlace_a_receta">
+            <a href="{% url 'flourless_bite_sized_breakfast_muffins' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/breakfast/muffins_chico.jpg' %}"
+                    alt="muffins square image" />
+                <p>Flourless bite-sized breakfast muffins</p>
+            </a>
+        </div>
+        <div class="enlace_a_receta">
+            <a href="{% url 'chickpea_salad' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/lunch/Receta_1.1_chico.png' %}"
+                    alt="Chickpea Salad" />
+                <p>Chickpea Salad</p>
+            </a>
+        </div>
+        <div class="enlace_a_receta">
+            <a href="{% url 'apple_flan' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/dessert/apple_flan_chico.jpg' %}"
+                    alt="banana cookies square image" />
+                <p>Apple flan</p>
+            </a>
+        </div>
+    </section>
+</main>
+{% endblock %}
