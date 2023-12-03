@@ -1,177 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>High protein vegan breakfast burrito</title>
+{% extends "base.html" %}
+{% load static %}
 
-        <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
-        <link rel="icon" type="image/x-icon" href="../media/icons/appetit.ico">
-
-        <meta property="og:title" content="Appetit"/>
-        <meta property="og:type" content="article"/>
-        <meta property="og:url" content="https://www.Appetit.com/"/>
-        <meta property="og:image" content="../assets/media/image/a_logo_Appetit.png"/>
-        <meta property="og:description" content="Appetit - High protein vegan breakfast burrito"/>
-        
-        <script src="https://kit.fontawesome.com/a6d1c73a06.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header class="header">
-            <div class="logo">
-                <a href="../index.html">
-                    <img src="../media/image/a_logo_Appetit.png" alt="Logo Appetit">
-                </a>
-            </div>
-            <nav class="menu">
-                <ul class="nav-links">
-                    <li><a href="./recipes.html">Recipes</a></li>
-                    <li><a href="./chefs.html">Chefs</a></li>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./about_us.html">About us</a></li>
-                    <li><a class="btn" href="./contact.html"><button>Contact</button></a></li>
-                </ul>
-            </nav>
-            <a class="btn btn_menu" id="btn_menu">
-                <i class="fa-solid fa-bars"></i>
-            </a>
-            <div class="lista_menu oculto" id="lista_menu">
+{% block main %}
+<main>
+    <section class="cuerpo_receta">
+        <h1 class="titulo_animado">High protein vegan breakfast burrito</h1>
+        <div class="foto_receta">
+            <img class="imagen_de_receta" src="{% static './img/image/breakfast/burrito_04.jp' %}g"
+                alt="burrito presentation" />
+        </div>
+        <div class="receta_primera_parte">
+            <div class="cuerpo">
                 <ul>
-                    <li><a href="./recipes.html">Recipes</a></li>
-                    <li><a href="./chefs.html">Chefs</a></li>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./about_us.html">About us</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li>Yield: Four 3/4 cup servings</li>
+                    <li>Prep time: 20 minutes</li>
+                    <li>Cook time: 20 minutes</li>
+                </ul>
+
+                <p>This burrito is a great way to change up your normal breakfast routine. Best of all, it makes 4
+                    servings so you can store the leftover scramble in the fridge and simply heat and go for a quick
+                    breakfast all week long. <br>Feel free to play around with the ingredients and seasonings depending
+                    on what you have in your fridge. Don’t like tofu? Try swapping it out for black beans or chickpeas!
+                </p>
+
+                <p class="subtitulo">INGREDIENTS</p>
+
+                <ul>
+                    <li>1 package extra-firm tofu, rinsed and pressed</li>
+                    <li>1 tsp extra virgin olive oil</li>
+                    <li>3 garlic cloves</li>
+                    <li>2 cups diced sweet onion (about 1 medium)</li>
+                    <li>1 cup diced potato (~115 grams or half a medium potato)</li>
+                    <li>1.5 cups sliced crimini mushrooms (150 grams or about 9 mushrooms)</li>
+                    <li>1/4 cup nutritional yeast</li>
+                    <li>3-4 tbsp minced fresh basil</li>
+                    <li>2 tbsp minced fresh parsley</li>
+                    <li>1-1.5 tbsp fresh lemon juice</li>
+                    <li>3/4 tsp kosher salt (or to taste) + black pepper</li>
                 </ul>
             </div>
-        </header>
-        <main>
-            <section class="cuerpo_receta">
-                <h1 class="titulo_animado">High protein vegan breakfast burrito</h1>
-                <div class="foto_receta">
-                    <img class="imagen_de_receta" src="../media/image/breakfast/burrito_04.jpg" alt="burrito presentation"/>
-                </div>
-                <div class="receta_primera_parte">
-                    <div class="cuerpo">
-                        <ul>
-                            <li>Yield: Four 3/4 cup servings</li>
-                            <li>Prep time: 20 minutes</li>
-                            <li>Cook time: 20 minutes</li>
-                        </ul>
+        </div>
+        <div class="foto_receta">
+            <img class="imagen_de_receta" src="{% static './img/image/breakfast/burrito_02.jp' %}g"
+                alt="burrito preparation" />
+        </div>
+        <div class="receta_segunda_parte">
+            <div class="cuerpo">
+                <p class="subtitulo">DIRECTIONS </p>
+                <ol>
+                    <li>Press tofu: Rinse the tofu with water and place a couple kitchen towels on the counter. Wrap the
+                        tofu with another towel, place another towel on top, and finally place several heavy cookbooks
+                        on top. <br>Let sit for at least 20 minutes to soak out the water. Alternatively, you can use a
+                        tofu press if you have one.</li>
+                    <li>Meanwhile, heat a large skillet with 1 tsp oil over medium heat. Sauté garlic and onion for a
+                        few minutes over medium heat. <br> Add in the diced potato and mushrooms and sauté for 12
+                        minutes, reducing heat if necessary and stirring frequently so it doesn’t stick to the bottom.
+                    </li>
+                    <li>Remove tofu from towels and dice on chopping board. You want the tofu very small (see picture
+                        below). <br>Now, reduce heat to low and stir in the nutritional yeast, tofu, fresh herbs, lemon
+                        juice, and season with salt and pepper to taste. Continue cooking on low until potato is cooked
+                        through, only a few more minutes, if necessary.</li>
+                    <li>Add 3/4 cup of the mixture on a large tortilla wrap, spoon on salsa, and top with Daiya cheese
+                        and chopped green onion if desired.</li>
+                </ol>
+                <p class="subtitulo">TIP:</p>
 
-                        <p>This burrito is a great way to change up your normal breakfast routine. Best of all, it makes 4 servings so you can store the leftover scramble in the fridge and simply heat and go for a quick breakfast all week long. <br>Feel free to play around with the ingredients and seasonings depending on what you have in your fridge. Don’t like tofu? Try swapping it out for black beans or chickpeas!</p>
+                <p>This baby packs in the protein. Add a wrap and it’s easily over 22 grams of protein per burrito.</p>
 
-                        <p class="subtitulo">INGREDIENTS</p>
+                <p class="subtitulo">NUTRITION INFORMATION</p>
 
-                        <ul>
-                            <li>1 package extra-firm tofu, rinsed and pressed</li>
-                            <li>1 tsp extra virgin olive oil</li>
-                            <li>3 garlic cloves</li>
-                            <li>2 cups diced sweet onion (about 1 medium)</li>
-                            <li>1 cup diced potato (~115 grams or half a medium potato)</li>
-                            <li>1.5 cups sliced crimini mushrooms (150 grams or about 9 mushrooms)</li>
-                            <li>1/4 cup nutritional yeast</li>
-                            <li>3-4 tbsp minced fresh basil</li>
-                            <li>2 tbsp minced fresh parsley</li>
-                            <li>1-1.5 tbsp fresh lemon juice</li>
-                            <li>3/4 tsp kosher salt (or to taste) + black pepper</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="foto_receta">
-                    <img class="imagen_de_receta" src="../media/image/breakfast/burrito_02.jpg" alt="burrito preparation"/>
-                </div>
-                <div class="receta_segunda_parte">
-                    <div class="cuerpo">
-                        <p class="subtitulo">DIRECTIONS </p>
-                        <ol>
-                            <li>Press tofu: Rinse the tofu with water and place a couple kitchen towels on the counter. Wrap the tofu with another towel, place another towel on top, and finally place several heavy cookbooks on top. <br>Let sit for at least 20 minutes to soak out the water. Alternatively, you can use a tofu press if you have one.</li>
-                            <li>Meanwhile, heat a large skillet with 1 tsp oil over medium heat. Sauté garlic and onion for a few minutes over medium heat. <br> Add in the diced potato and mushrooms and sauté for 12 minutes, reducing heat if necessary and stirring frequently so it doesn’t stick to the bottom.</li>
-                            <li>Remove tofu from towels and dice on chopping board. You want the tofu very small (see picture below). <br>Now, reduce heat to low and stir in the nutritional yeast, tofu, fresh herbs, lemon juice, and season with salt and pepper to taste. Continue cooking on low until potato is cooked through, only a few more minutes, if necessary.</li>
-                            <li>Add 3/4 cup of the mixture on a large tortilla wrap, spoon on salsa, and top with Daiya cheese and chopped green onion if desired.</li>
-                        </ol>
-                        <p class="subtitulo">TIP:</p>
-                        
-                        <p>This baby packs in the protein. Add a wrap and it’s easily over 22 grams of protein per burrito.</p>
-
-                        <p class="subtitulo">NUTRITION INFORMATION</p>
-                        
-                        <p>Calories 183 calories | Total Fat 5 grams <br>
-                        Fiber 6 grams | Protein 17 grams <br>
-                        * Nutrition data is approximate and is for informational purposes only.</p>
-                    </div>
-                </div>
-                <div id="go-to">
-                    <a href="breakfast.html"> Go to breakfast</a>
-                </div>
-            </section>
-            <div>
-                <h2>More recipes</h2>
+                <p>Calories 183 calories | Total Fat 5 grams <br>
+                    Fiber 6 grams | Protein 17 grams <br>
+                    * Nutrition data is approximate and is for informational purposes only.</p>
             </div>
-            <section class="contenedor_de_enlaces_01">                 
-                <div class="enlace_a_receta">
-                    <a href="./Flourless_bite_sized_breakfast_muffins.html"> <img class="imagen_del_enlace" src="../media/image/breakfast/muffins_chico.jpg" alt="muffins square image"/> <p>Flourless bite-sized breakfast muffins</p> </a>
-                </div>
-                <div class="enlace_a_receta">
-                    <a href="./chickpea_salad.html"> <img class="imagen_del_enlace" src="../media/image/lunch/Receta_1.1_chico.png" alt="Chickpea Salad square image"/> <p>Chickpea Salad</p> </a>
-                </div>
-                <div class="enlace_a_receta">
-                    <a href="./banana_protein_cookies.html"> <img class="imagen_del_enlace" src="../media/image/dessert/banana_cookies_03_chico.jpg" alt="banana cookies square image"/> <p>Banana protein cookies</p></a>
-                </div>
-            </section> 
-        </main>
-        <br>
-        <footer class="footer-distributed">
-    
-            <div class="footer-left">
-                <a href="../index.html">
-                <img id="logo" src="../media/image/a_logo_Appetit.png" alt="Logo Appetit" height="76px" width="250"/></a>  <!-- Al hacer click en el logo se redirige al home -->
-    
-                <p class="footer-links">
-                    <a href="../index.html" target="_blank">Home</a>
-                    |
-                    <a href="../pages/about_us.html" target="_blank">About us</a>
-                    |
-                    <a href="../pages/contact.html" target="_blank">Contact</a>
-                    |
-                    <a href="../pages/chefs.html" target="_blank">Chefs</a>
-                </p>
-    
-                <p class="footer-company-name">Copyright © 2023 <strong>Appetit</strong> All rights reserved</p>
-            </div>
-    
-            <div class="footer-center">
-                <div>
-                    <a href="https://maps.app.goo.gl/ZTRZAVtwbNtC2FCt8" target="_blank"> <i class="fa-solid fa-location-dot" style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
-                    <p><span>Argentina</span> Buenos Aires</p>
-                </div>
-    
-                <div>
-                    <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"> <i class="fa-brands fa-whatsapp" style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
-                    <p><span>WhatsApp</span>+54 3835784512</p>
-                </div>
-    
-                <div>
-                    <a href="https://www.gmail.com" target="_blank"> <i class="fa-solid fa-envelope" style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
-                    <p><a href="https://mail.google.com/">appetit@gmail.com</a></p>
-                </div>
-            </div>
-            <div class="footer-right">
-    <p class="footer-company-about">
-        <span>About the company</span>
-        If you want to know more about us or our restaurant, do not hesitate to contact us.
-    </p>
-    <div class="footer-icons">
-        <a href="https://www.facebook.com" target="_blank"><img src="../media/social-media/facebook.png" style="width: 38px; height: 38px;"></a>
-        <a href="https://www.instagram.com" target="_blank"><img src="../media/social-media/instagram.webp" style="width: 38px; height: 38px;"></a>
-        <a href="https://www.linkedin.com" target="_blank"><img src="../media/social-media/linkedin.png" style="width: 38px; height: 38px;"></a>
-        <a href="https://www.twitter.com" target="_blank"><img src="../media/social-media/twitter.png" style="width: 38px; height: 38px;"></a>
-        <a href="https://www.youtube.com" target="_blank"><img src="../media/social-media//utube.png" style="width: 38px; height: 38px;"></a>
+        </div>
+        <div id="go-to">
+            <a href="{% url 'breakfast' %}">
+                Go to breakfast
+            </a>
+        </div>
+    </section>
+    <div>
+        <h2>More recipes</h2>
     </div>
-    </div>
-            </div>
-            </div>
-        </footer>
-    </body>
-</html>
-<script src="../assets/js/index.js"></script>
+    <section class="contenedor_de_enlaces_01">
+        <div class="enlace_a_receta">
+            <a href="{% url 'flourless_bite_sized_breakfast_muffins' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/breakfast/muffins_chico.jpg' %}"
+                    alt="muffins square image" />
+                <p>Flourless bite-sized breakfast muffins</p>
+            </a>
+        </div>
+        <div class="enlace_a_receta">
+            <a href="{% url 'chickpea_salad' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/lunch/Receta_1.1_chico.png' %}"
+                    alt="Chickpea Salad square image" />
+                <p>Chickpea Salad</p>
+            </a>
+        </div>
+        <div class="enlace_a_receta">
+            <a href="{% url 'banana_protein_cookies' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/dessert/banana_cookies_03_chico.jpg' %}"
+                    alt="banana cookies square image" />
+                <p>Banana protein cookies</p>
+            </a>
+        </div>
+    </section>
+</main>
+{% endblock %}
