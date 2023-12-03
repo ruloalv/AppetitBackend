@@ -1,178 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mushroom-Stuffed Eggplant Recipe</title>
+{% extends "base.html" %}
+{% load static %}
 
-        <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
-        <link rel="icon" type="image/x-icon" href="../media/icons/appetit.ico">
-
-        <meta property="og:title" content="Appetit"/>
-        <meta property="og:type" content="article"/>
-        <meta property="og:url" content="https://www.Appetit.com/"/>
-        <meta property="og:image" content="../assets/media/image/a_logo_Appetit.png"/>
-        <meta property="og:description" content="Appetit - Mushroom-Stuffed Eggplant"/>
-        
-        <script src="https://kit.fontawesome.com/a6d1c73a06.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header class="header">
-            <div class="logo">
-                <a href="../index.html">
-                    <img src="../media/image/a_logo_Appetit.png" alt="Logo Appetit">
-                </a>
-            </div>
-            <nav class="menu">
-                <ul class="nav-links">
-                    <li><a href="./recipes.html">Recipes</a></li>
-                    <li><a href="./chefs.html">Chefs</a></li>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./about_us.html">About us</a></li>
-                    <li><a class="btn" href="./contact.html"><button>Contact</button></a></li>
-                </ul>
-            </nav>
-            <a class="btn btn_menu" id="btn_menu">
-                <i class="fa-solid fa-bars"></i>
-            </a>
-            <div class="lista_menu oculto" id="lista_menu">
+{% block main %}
+<main>
+    <section class="cuerpo_receta">
+        <h1 class="titulo_animado">Mushroom-Stuffed Eggplant</h1>
+        <div class="foto_receta">
+            <img class="imagen_de_receta" src="{% static './img/image/lunch/Receta 6.2.png' %}"
+                alt="Mushroom-Stuffed Eggplant" />
+        </div>
+        <div class="receta_primera_parte">
+            <div class="cuerpo">
                 <ul>
-                    <li><a href="./recipes.html">Recipes</a></li>
-                    <li><a href="./chefs.html">Chefs</a></li>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./about_us.html">About us</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li>Yield: Serves 4</li>
+                    <li>Prep time: 20 minutes</li>
+                    <li>Cook time: 40 minutes</li>
+                </ul>
+                <p>Mushroom-Stuffed Eggplant is a savory and satisfying vegetarian dish that's perfect for dinner. This
+                    recipe serves 4 and combines the earthy flavors of mushrooms with tender roasted eggplant. It's sure
+                    to impress your guests!</p>
+                <p class="subtitulo">INGREDIENTS</p>
+                <ul>
+                    <li>2 large eggplants</li>
+                    <li>2 tablespoons olive oil</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>2 cloves garlic, minced</li>
+                    <li>8 oz mushrooms, finely chopped</li>
+                    <li>1/2 cup breadcrumbs</li>
+                    <li>1/2 cup grated Parmesan cheese</li>
+                    <li>1/4 cup fresh parsley, chopped</li>
+                    <li>Salt and pepper to taste</li>
+                    <li>1 cup tomato sauce</li>
+                    <li>1 cup shredded mozzarella cheese</li>
                 </ul>
             </div>
-        </header>
-        <main>
-            <section class="cuerpo_receta">
-                <h1 class="titulo_animado">Mushroom-Stuffed Eggplant</h1>
-                <div class="foto_receta">
-                    <img class="imagen_de_receta" src="../media/image/lunch/Receta 6.2.png" alt="Mushroom-Stuffed Eggplant"/>
-                </div>
-                <div class="receta_primera_parte">
-                    <div class="cuerpo">
-                        <ul>
-                            <li>Yield: Serves 4</li>
-                            <li>Prep time: 20 minutes</li>
-                            <li>Cook time: 40 minutes</li>
-                        </ul>
-                        <p>Mushroom-Stuffed Eggplant is a savory and satisfying vegetarian dish that's perfect for dinner. This recipe serves 4 and combines the earthy flavors of mushrooms with tender roasted eggplant. It's sure to impress your guests!</p>
-                        <p class="subtitulo">INGREDIENTS</p>
-                        <ul>
-                            <li>2 large eggplants</li>
-                            <li>2 tablespoons olive oil</li>
-                            <li>1 onion, finely chopped</li>
-                            <li>2 cloves garlic, minced</li>
-                            <li>8 oz mushrooms, finely chopped</li>
-                            <li>1/2 cup breadcrumbs</li>
-                            <li>1/2 cup grated Parmesan cheese</li>
-                            <li>1/4 cup fresh parsley, chopped</li>
-                            <li>Salt and pepper to taste</li>
-                            <li>1 cup tomato sauce</li>
-                            <li>1 cup shredded mozzarella cheese</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="foto_receta">
-                    <img class="imagen_de_receta" src="../media/image/lunch/Receta 6.3.png" alt="Mushroom-Stuffed Eggplant Ingredients"/>
-                </div>
-                <div class="receta_segunda_parte">
-                    <div class="cuerpo">
-                        <p class="subtitulo">DIRECTIONS</p>
-                        <ol>
-                            <li>Cut the eggplants in half lengthwise and scoop out the flesh, leaving about a 1/4-inch thick shell. Dice the scooped-out flesh and set aside.</li>
-                            <li>Preheat your oven to 375°F (190°C).</li>
-                            <li>Heat olive oil in a skillet over medium heat. Add the chopped onion and garlic, and sauté until they become translucent, about 2-3 minutes.</li>
-                            <li>Add the diced eggplant flesh and mushrooms to the skillet. Cook for 5-7 minutes until the vegetables are tender and any liquid has evaporated.</li>
-                            <li>Remove the skillet from heat and stir in the breadcrumbs, Parmesan cheese, and chopped parsley. Season with salt and pepper to taste.</li>
-                            <li>Fill the eggplant shells with the mushroom mixture and place them in a baking dish.</li>
-                            <li>Spoon tomato sauce over each stuffed eggplant half and sprinkle with shredded mozzarella cheese.</li>
-                            <li>Cover the baking dish with foil and bake for 25-30 minutes. Then, remove the foil and bake for an additional 10 minutes or until the cheese is bubbly and golden.</li>
-                            <li>Remove from the oven, let cool slightly, and serve your delicious Mushroom-Stuffed Eggplant!</li>
-                        </ol>
-                        <p class="subtitulo">TIP:</p>
-                        <p>Pair this dish with a side salad or garlic bread for a complete meal.</p>
+        </div>
+        <div class="foto_receta">
+            <img class="imagen_de_receta" src="{% static './img/image/lunch/Receta 6.3.png' %}"
+                alt="Mushroom-Stuffed Eggplant Ingredients" />
+        </div>
+        <div class="receta_segunda_parte">
+            <div class="cuerpo">
+                <p class="subtitulo">DIRECTIONS</p>
+                <ol>
+                    <li>Cut the eggplants in half lengthwise and scoop out the flesh, leaving about a 1/4-inch thick
+                        shell. Dice the scooped-out flesh and set aside.</li>
+                    <li>Preheat your oven to 375°F (190°C).</li>
+                    <li>Heat olive oil in a skillet over medium heat. Add the chopped onion and garlic, and sauté until
+                        they become translucent, about 2-3 minutes.</li>
+                    <li>Add the diced eggplant flesh and mushrooms to the skillet. Cook for 5-7 minutes until the
+                        vegetables are tender and any liquid has evaporated.</li>
+                    <li>Remove the skillet from heat and stir in the breadcrumbs, Parmesan cheese, and chopped parsley.
+                        Season with salt and pepper to taste.</li>
+                    <li>Fill the eggplant shells with the mushroom mixture and place them in a baking dish.</li>
+                    <li>Spoon tomato sauce over each stuffed eggplant half and sprinkle with shredded mozzarella cheese.
+                    </li>
+                    <li>Cover the baking dish with foil and bake for 25-30 minutes. Then, remove the foil and bake for
+                        an additional 10 minutes or until the cheese is bubbly and golden.</li>
+                    <li>Remove from the oven, let cool slightly, and serve your delicious Mushroom-Stuffed Eggplant!
+                    </li>
+                </ol>
+                <p class="subtitulo">TIP:</p>
+                <p>Pair this dish with a side salad or garlic bread for a complete meal.</p>
 
-                        <p class="subtitulo">NUTRITION INFORMATION</p>
-                        <p>Serving Size 1/2 stuffed eggplant | Calories 320 calories | Total Fat 15 grams <br>
-                            Saturated Fat 5 grams | Sodium 620 milligrams | Total Carbohydrates 38 grams <br>
-                            Fiber 11 grams | Sugar 12 grams | Protein 14 grams <br>
-                            * Nutrition data is approximate and is for informational purposes only.</p>
-                    </div>
-                </div>
-                <div id="go-to">
-                    <a href="recipes.html">Go to recipes</a>
-                </div>
-            </section>
-            <div>
-                <h2>More recipes</h2>
+                <p class="subtitulo">NUTRITION INFORMATION</p>
+                <p>Serving Size 1/2 stuffed eggplant | Calories 320 calories | Total Fat 15 grams <br>
+                    Saturated Fat 5 grams | Sodium 620 milligrams | Total Carbohydrates 38 grams <br>
+                    Fiber 11 grams | Sugar 12 grams | Protein 14 grams <br>
+                    * Nutrition data is approximate and is for informational purposes only.</p>
             </div>
-            <section class="contenedor_de_enlaces_01">                 
-                <div class="enlace_a_receta">
-                    <a href="./Flourless_bite_sized_breakfast_muffins.html"> <img class="imagen_del_enlace" src="../media/image/breakfast/muffins_chico.jpg" alt="muffins square image"/> <p>Flourless bite-sized breakfast muffins</p> </a>
-                </div>
-                <div class="enlace_a_receta">
-                    <a href="./chickpea_salad.html"> <img class="imagen_del_enlace" src="../media/image/lunch/Receta_1.1_chico.png" alt="Chickpea Salad square image"/> <p>Chickpea Salad</p> </a>
-                </div>
-                <div class="enlace_a_receta">
-                    <a href="./banana_protein_cookies.html"> <img class="imagen_del_enlace" src="../media/image/dessert/banana_cookies_03_chico.jpg" alt="banana cookies square image"/> <p>Banana protein cookies</p></a>
-                </div>
-            </section> 
-        </main>
-        <br>
-        <footer class="footer-distributed">
-    
-            <div class="footer-left">
-                <a href="../index.html">
-                <img id="logo" src="../media/image/a_logo_Appetit.png" alt="Logo Appetit" height="76px" width="250"/></a>  <!-- Al hacer click en el logo se redirige al home -->
-    
-                <p class="footer-links">
-                    <a href="../index.html" target="_blank">Home</a>
-                    |
-                    <a href="../pages/about_us.html" target="_blank">About us</a>
-                    |
-                    <a href="../pages/contact.html" target="_blank">Contact</a>
-                    |
-                    <a href="../pages/chefs.html" target="_blank">Chefs</a>
-                </p>
-    
-                <p class="footer-company-name">Copyright © 2023 <strong>Appetit</strong> All rights reserved</p>
-            </div>
-    
-            <div class="footer-center">
-                <div>
-                    <a href="https://maps.app.goo.gl/ZTRZAVtwbNtC2FCt8" target="_blank"> <i class="fa-solid fa-location-dot" style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
-                    <p><span>Argentina</span> Buenos Aires</p>
-                </div>
-    
-                <div>
-                    <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"> <i class="fa-brands fa-whatsapp" style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
-                    <p><span>WhatsApp</span>+54 3835784512</p>
-                </div>
-    
-                <div>
-                    <a href="https://www.gmail.com" target="_blank"> <i class="fa-solid fa-envelope" style="color: #ff9f0d; background-color: #ffffff;"></i> </a>
-                    <p><a href="https://mail.google.com/">appetit@gmail.com</a></p>
-                </div>
-            </div>
-            <div class="footer-right">
-    <p class="footer-company-about">
-        <span>About the company</span>
-        If you want to know more about us or our restaurant, do not hesitate to contact us.
-    </p>
-    <div class="footer-icons">
-        <a href="https://www.facebook.com" target="_blank"><img src="../media/social-media/facebook.png" style="width: 38px; height: 38px;"></a>
-        <a href="https://www.instagram.com" target="_blank"><img src="../media/social-media/instagram.webp" style="width: 38px; height: 38px;"></a>
-        <a href="https://www.linkedin.com" target="_blank"><img src="../media/social-media/linkedin.png" style="width: 38px; height: 38px;"></a>
-        <a href="https://www.twitter.com" target="_blank"><img src="../media/social-media/twitter.png" style="width: 38px; height: 38px;"></a>
-        <a href="https://www.youtube.com" target="_blank"><img src="../media/social-media//utube.png" style="width: 38px; height: 38px;"></a>
+        </div>
+        <div id="go-to">
+            <a href="{% url 'recipes' %}">
+                Go to recipes
+            </a>
+        </div>
+    </section>
+    <div>
+        <h2>More recipes</h2>
     </div>
-    </div>
-            </div>
-            </div>
-        </footer>
-    </body>
-</html>
-<script src="../assets/js/index.js"></script>
+    <section class="contenedor_de_enlaces_01">
+        <div class="enlace_a_receta">
+            <a href="{% url 'flourless_bite_sized_breakfast_muffins' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/breakfast/muffins_chico.jpg' %}"
+                    alt="muffins square image" />
+                <p>Flourless bite-sized breakfast muffins</p>
+            </a>
+        </div>
+        <div class="enlace_a_receta">
+            <a href="{% url 'chickpea_salad' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/lunch/Receta_1.1_chico.png' %}"
+                    alt="Chickpea Salad square image" />
+                <p>Chickpea Salad</p>
+            </a>
+        </div>
+        <div class="enlace_a_receta">
+            <a href="{% url 'banana_protein_cookies' %}">
+                <img class="imagen_del_enlace" src="{% static './img/image/dessert/banana_cookies_03_chico.jpg' %}"
+                    alt="banana cookies square image" />
+                <p>Banana protein cookies</p>
+            </a>
+        </div>
+    </section>
+</main>
+{% endblock %}
