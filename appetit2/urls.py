@@ -15,7 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 from .views import HomePage, AboutUs, AppleFlan, BananaCookies, Breakfast, BroccoliSoup, BrownieFit, CarrotCake
 from .views import CarrotCookies, Chefs, ChickenChaufa, ChickpeaSalad, ChocolateDreams, Contact, Dessert, FlourlessMuffins
@@ -50,5 +50,6 @@ urlpatterns = [
     path("recipes.html", Recipes.as_view(), name = "recipes"),
     path("strawberry_and_kiwi_bons.html", KiwiBons.as_view(), name = "strawberry_and_kiwi_bons"),
     path("sugar_free_apple_pie_chia_seed_jam.html", ApplePie.as_view(), name = "sugar_free_apple_pie_chia_seed_jam"),
-    path("vegetable_and_egg_tart.html", EggTart.as_view(), name = "vegetable_and_egg_tart")
+    path("vegetable_and_egg_tart.html", EggTart.as_view(), name = "vegetable_and_egg_tart"),
+    path('comments/', include('app_comment.urls')),
 ]
