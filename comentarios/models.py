@@ -11,7 +11,7 @@ class Comentario(models.Model):
     
     def __str__(self) -> str:
         return f"El usurio: {self.usuario} escribió un comentario el {self.fecha}"
-    
+
     def get_fields(self):
         return [
             (field.verbose_name, field.value_from_objetc(self))
