@@ -51,5 +51,5 @@ urlpatterns = [
     path("strawberry_and_kiwi_bons.html", KiwiBons.as_view(), name = "strawberry_and_kiwi_bons"),
     path("sugar_free_apple_pie_chia_seed_jam.html", ApplePie.as_view(), name = "sugar_free_apple_pie_chia_seed_jam"),
     path("vegetable_and_egg_tart.html", EggTart.as_view(), name = "vegetable_and_egg_tart"),
-    path('comments/', include('comentarios.urls')),
+    path('comments/', include('app_comment.urls')),
 ]

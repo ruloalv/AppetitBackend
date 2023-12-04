@@ -1,8 +1,8 @@
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 
-from comentarios.models import Comentario
-from comentarios.forms import CommentForm
+from app_comment.models import Comment
+from app_comment.forms import CommentForm
 
 
 class CommentsListView(ListView):
@@ -10,25 +10,25 @@ class CommentsListView(ListView):
     context_object_name = "comments"
 
     def get_queryset(self):
-        queryset = Comentario.objects.all()
+        queryset = Comment.objects.all()
         return queryset
 
 
 class CommentCreateView(CreateView):
-    model = Comentario
+    model = Comment
     form_class = CommentForm
     template_name = 'pages/comments/create.html'
     success_url = reverse_lazy('comment_list')
 
 
 class CommentUpdateView(UpdateView):
-    model = Comentario
+    model = Comment
     form_class = CommentForm
     template_name = 'pages/comments/create.html'
     success_url = reverse_lazy('comment_list')
 
 
 class CommentDeleteView(DeleteView):
-    model = Comentario
+    model = Comment
     template_name = 'pages/comments/list.html'
     success_url = reverse_lazy('comment_list')
