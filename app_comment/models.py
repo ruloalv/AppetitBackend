@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Comment(models.Model):
     username = models.CharField(max_length=30, blank=False, null=False)
-    subjetc = models.CharField(max_length=100, blank=False, null=False)
+    subject = models.CharField(max_length=100, blank=False, null=False)
     comment = models.CharField(max_length=500, blank=False)
     date = models.DateField(auto_now=True)
 

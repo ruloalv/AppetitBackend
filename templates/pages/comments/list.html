@@ -9,20 +9,21 @@
 			<div class="cuerpo">
 				<ul>
 					{% for comment in comments %}
-						<a href="{% url 'comment_update' pk=comment.id %}">
-							<li><b>User Name:</b>{{ comment.username }}</li>
-						</a>
-						<b>subject:</b> {{ comment.subjectc }} - <b>date:</b> {{ comment.date }}
-						<p><b>Comment:</b> {{ comment.comment }}</p>
-						<form method="post" action="{% url 'comment_delete' pk=comment.id %}" style="display: inline;">
-							{% csrf_token %}
-							<button type="submit" onclick="return confirm('¿Estás seguro de que deseas eliminar {{ producto.nombre }}?')">Eliminar</button>
-						</form>
+					<a href="{% url 'comment_update' pk=comment.id %}">
+						<li><b>User Name:</b>{{ comment.username }}</li>
+					</a>
+					<b>subject:</b> {{ comment.subject }} - <b>date:</b> {{ comment.date }}
+					<p><b>Comment:</b> {{ comment.comment }}</p>
+					<form method="post" action="{% url 'comment_delete' pk=comment.id %}" style="display: inline;">
+						{% csrf_token %}
+						<button type="submit"
+							onclick="return confirm('¿Estás seguro de que deseas eliminar {{ producto.nombre }}?')">Eliminar</button>
+					</form>
 					{% endfor %}
 				</ul>
 			</div>
 		</div>
-		
+
 		<div id="go-to">
 			<a href="{% url 'comment_create' %}">
 				Create new comment
