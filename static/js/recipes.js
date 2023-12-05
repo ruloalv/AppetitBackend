@@ -1,4 +1,4 @@
-const TOKEN = "nakzp5ez45x64zd4g9hseopk9picabjeonepyabf";
+const TOKEN = "g6oi5ozhr0k0bfh82syecg2b5oo6xofqhk2zm8q9";
 const URL = "https://sheetdb.io/api/v1/dqu2afl50gp3l";
 
 const renderRecipes = (data) => {
