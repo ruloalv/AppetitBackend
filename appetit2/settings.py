@@ -50,6 +50,10 @@ INSTALLED_APPS = [
 INSTALLED_APPS += CUSTOM_APPS
 INSTALLED_APPS += EXTERNALS
 
+CUSTOM_MIDDLEWARE = [
+    "app_comment.cors.CorsMiddlewareMixin"
+]
+
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -59,6 +63,8 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
+
+MIDDLEWARE += CUSTOM_MIDDLEWARE
 
 ROOT_URLCONF = "appetit2.urls"
 
