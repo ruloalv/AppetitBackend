@@ -4,304 +4,309 @@
 @import url(./chefs.css);
 @import url(./imagenes_style.css);
 @import url(./animaciones.css);
+@import url(./form.css);
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;500;600&family=Raleway:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 .container {
-	margin: 0;
+    margin: 0;
 }
 
 .header {
-	display: flex;
-	position: relative;
+    display: flex;
+    position: relative;
     background-color: #208f20;
     justify-content: flex-start;
     align-items: center;
     height: 85px;
     padding: 5px 5%;
-    }
+}
 
 nav.menu {
-    margin-top:15px;
-    margin-left:300px;
+    margin-top: 15px;
+    margin-left: 300px;
 }
+
 .menu {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
 }
 
 .logo {
-	color: #303030;
-	font-size: 25px;
-	font-weight: 800;
+    color: #303030;
+    font-size: 25px;
+    font-weight: 800;
 }
 
 .menu .navbar ul li {
-	position: relative;
-	float: left;
+    position: relative;
+    float: left;
 }
 
 .menu .navbar ul li a {
-	font-size: 18px;
-	padding: 20px;
-	color: #303030;
-	display: block;
-	font-weight: 600;
-	display: none;
+    font-size: 18px;
+    padding: 20px;
+    color: #303030;
+    display: block;
+    font-weight: 600;
+    display: none;
 }
 
 #menu {
-	display: none;
+    display: none;
 }
 
 .menu-icono {
-	width: 25px;
+    width: 25px;
 }
 
 .menu label {
-	cursor: pointer;
-	display: none;
+    cursor: pointer;
+    display: none;
 }
 
 .bg {
-	position: absolute;
-	max-width: 1100px;
-	z-index: -1;
-	right: 0;
+    position: absolute;
+    max-width: 1100px;
+    z-index: -1;
+    right: 0;
 }
 
 .esp {
-	position: absolute;
-	top: 700px;
-	bottom: 0;
-	width: 350px;
+    position: absolute;
+    top: 700px;
+    bottom: 0;
+    width: 350px;
 }
 
 .header-info {
-	display: flex;
+    display: flex;
     justify-content: center;
-	align-items: center;
-	margin-top: 100px;
+    align-items: center;
+    margin-top: 100px;
 }
 
 .header-txt {
-	width: 50%;
-	padding-right: 35px;
+    width: 50%;
+    padding-right: 35px;
     top: 350px;
-    left:50px;
+    left: 50px;
     position: absolute;
 }
 
 .header-txt h1 {
-	font-size: 55px;
-	line-height: 70px;
-	font-weight: 600;
-	color: #303030;
+    font-size: 55px;
+    line-height: 70px;
+    font-weight: 600;
+    color: #303030;
     justify-content: left;
-	margin-bottom: 25px;
+    margin-bottom: 25px;
     margin-left: 0px;
     text-transform: capitalize;
 }
 
 .header-txt p {
-	font-size: 16px;
-	color: #545454;
-	margin-bottom: 35px;
+    font-size: 16px;
+    color: #545454;
+    margin-bottom: 35px;
 }
 
 .btn-1 {
-  display: inline-block;
-  background-color: #ff9f0d;
-  padding: 13px 30px;
-  border-radius: 25px;
-  color: #ffffff;
-  text-transform: capitalize;
-  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2); /* borde sombreado*/
+    display: inline-block;
+    background-color: #ff9f0d;
+    padding: 13px 30px;
+    border-radius: 25px;
+    color: #ffffff;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+    /* borde sombreado*/
 }
 
 .btn-1:hover {
-	background-color: #ee9003;
+    background-color: #ee9003;
 }
 
 .header-img {
-	width: 50%;
+    width: 50%;
 }
 
 .header-img img {
-	width: 650px;
-    position: relative; 
+    width: 650px;
+    position: relative;
     /*top: -90px;*/
 }
 
 .info {
-	padding: 100px;
-    margin-top:300px;
-	display: flex;
-	justify-content: space-between;
+    padding: 100px;
+    margin-top: 300px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .info-1 {
     width: 300px;
     padding: 15px 25px;
     text-align: center;
-    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     margin: 25px 10px;
     animation: sombra_info-1 5s infinite;
 }
 
 .info-1 img {
-	width: 35px;
+    width: 35px;
 }
 
 .info-1 h3 {
-	font-size: 18px;
-	color: #303030;
-	margin-bottom: 10px;
+    font-size: 18px;
+    color: #303030;
+    margin-bottom: 10px;
 }
 
 .info-1 p {
-	font-size: 16px;
-	color: #545454;
+    font-size: 16px;
+    color: #545454;
 }
 
 .nosotros {
-	position: relative;
+    position: relative;
     overflow: hidden;
 }
 
 .bg-2 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	max-width: 1100px;
-	z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 1100px;
+    z-index: -1;
 }
 
 .nosotros-info {
-	padding: 100px 0;
-	display: flex;
+    padding: 100px 0;
+    display: flex;
     justify-content: center;
-	align-items: center;
+    align-items: center;
     overflow: hidden;
 }
 
 .nosotros-img {
-	width: 50%;
+    width: 50%;
     margin-left: -200px;
 }
 
 .nosotros-img img {
-	width: 650px;
+    width: 650px;
 }
 
 .nosotros-txt {
-	width: 50%;
+    width: 50%;
     text-align: right;
     position: relative;
 }
 
 .nosotros-txt span {
-	font-size: 16px;
-	color: #080806;
-	font-weight: 700;
-	margin-bottom: 25px;
+    font-size: 16px;
+    color: #080806;
+    font-weight: 700;
+    margin-bottom: 25px;
 }
 
 .nosotros-txt h2 {
-	font-size: 45px;
-	color: #303030;
-	margin-bottom: 30px;
+    font-size: 45px;
+    color: #303030;
+    margin-bottom: 30px;
     justify-content: right;
 }
 
 .nosotros-txt p {
-	font-size: 18px;
-	color: #545454;
-	margin-bottom: 50px;
+    font-size: 18px;
+    color: #545454;
+    margin-bottom: 50px;
 }
 
 .products {
-	padding: 80px 50px;
-	text-align: center;
+    padding: 80px 50px;
+    text-align: center;
 }
 
 .products h2 {
-	font-size: 45px;
-	color: #303030;
-	margin-bottom: 30px;
+    font-size: 45px;
+    color: #303030;
+    margin-bottom: 30px;
 }
 
 .products h2 {
-	font-size: 45px;
-	color: #303030;
-	margin-bottom: 30px;
+    font-size: 45px;
+    color: #303030;
+    margin-bottom: 30px;
 }
 
 .products p {
-	font-size: 18px;
-	color: #545454;
-	margin-bottom: 70px;
+    font-size: 18px;
+    color: #545454;
+    margin-bottom: 70px;
 }
 
 .product-info {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-auto-rows: auto;
-	grid-gap: 3rem;
-	margin: 10px;
-	justify-items: center; /* Centra los elementos horizontalmente en cada columna */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 3rem;
+    margin: 10px;
+    justify-items: center;
+    /* Centra los elementos horizontalmente en cada columna */
 }
 
 .product {
-	padding-bottom: 35px;
-	text-align: center;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-	border-radius: 25px;
-	width: 100%;
+    padding-bottom: 35px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    width: 100%;
 }
 
 .product img {
-	width: 100%;
-	height: 250px;
-	object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
-	border-radius: 25px 25px 0px 0px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    /* Asegura que la imagen se ajuste sin deformarse */
+    border-radius: 25px 25px 0px 0px;
 }
 
 .product h3 {
-	font-size: 20px;
-	color: #303030;
-	margin-top: 15px;
+    font-size: 20px;
+    color: #303030;
+    margin-top: 15px;
 }
 
 .product p {
-	font-size: 16px;
-	padding: 30px;
-	color: #545454;
-	margin: 0;
+    font-size: 16px;
+    padding: 30px;
+    color: #545454;
+    margin: 0;
 }
 
 .product span {
-	background-color: #ff9f0d;
-	padding: 10px;
-	color: #ffffff;
-	border-radius: 15px;
+    background-color: #ff9f0d;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 15px;
 }
 
 .hr {
-	border: 1px solid #eee;
+    border: 1px solid #eee;
 }
 
 /*------------------------------------------------------------------------------------------------------------------*/
 
-body{
+body {
     margin: 0px;
     padding: 0px;
 }
@@ -321,14 +326,16 @@ body main {
 }
 
 /*centrado de titulo h1*/
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     display: flex;
     justify-content: center;
     color: black;
 }
 
 /*Animacion de los títulos (h1)*/
-.titulo_animado{
+.titulo_animado {
     animation-name: color_titulos;
     animation-duration: 0.5s;
     animation-timing-function: ease;
@@ -339,7 +346,9 @@ h1, h2, h3 {
 }
 
 /*centrado de recetas y enlaces a las recetas*/
-.contenedor_recetas, .contenedor_de_enlaces_01, .contenedor_de_enlaces_02 {
+.contenedor_recetas,
+.contenedor_de_enlaces_01,
+.contenedor_de_enlaces_02 {
     display: flex;
     justify-content: center;
 }
@@ -349,7 +358,7 @@ h1, h2, h3 {
     width: 18rem;
     justify-content: center;
     text-align: center;
-    margin:1rem 1rem;
+    margin: 1rem 1rem;
 }
 
 #go-to {
@@ -357,10 +366,13 @@ h1, h2, h3 {
     justify-content: center;
     font-size: 1.125rem;
 }
+
 /*hasta aqui creo lo de css es para los enlaces a las recetas */
 
 /*estilo de las recetas*/
-.foto_receta, .receta_primera_parte, .receta_segunda_parte {
+.foto_receta,
+.receta_primera_parte,
+.receta_segunda_parte {
     display: flex;
     justify-content: center;
 }
@@ -377,7 +389,7 @@ h1, h2, h3 {
 
 /* Estilo básico de la barra de navegación */
 
-body > header {
+body>header {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -391,8 +403,10 @@ body > header {
     background-color: #208f20;
     justify-content: space-between;
     align-items: center;
-    height: auto; /* Cambia la altura a automático para que se ajuste al contenido */
-    padding: 10px 5%; /* Aumenta el relleno para dispositivos móviles */
+    height: auto;
+    /* Cambia la altura a automático para que se ajuste al contenido */
+    padding: 10px 5%;
+    /* Aumenta el relleno para dispositivos móviles */
 }
 
 .header .logo {
@@ -406,34 +420,38 @@ body > header {
     transition: all 0.3s;
 }
 
-.header .logo img:hover{
+.header .logo img:hover {
     transform: scale(1.2);
 }
 
-.nav-links, .lista_menu ul{
+.nav-links,
+.lista_menu ul {
     list-style: none;
 }
 
-.nav-links li{
+.nav-links li {
     display: inline-block;
-    padding: 0 20px;    
+    padding: 0 20px;
 }
 
-.nav-links li:hover, .lista_menu li:hover{
+.nav-links li:hover,
+.lista_menu li:hover {
     transform: scale(1.1);
 }
 
-.nav-links a, .lista_menu a{
+.nav-links a,
+.lista_menu a {
     font-size: 700;
     color: #eceff1;
-    text-decoration: none;    
+    text-decoration: none;
 }
 
-.nav-links li a:hover, .lista_menu li a:hover{
+.nav-links li a:hover,
+.lista_menu li a:hover {
     color: #b2e0b6;
 }
 
-.header .btn button{
+.header .btn button {
     margin-left: 20px;
     font-weight: 700;
     color: #1b3039;
@@ -445,7 +463,7 @@ body > header {
     transition: all 0.3s ease 0s;
 }
 
-.header .btn button:hover{
+.header .btn button:hover {
     background-color: #e2f1f8;
     color: #ffbc0e;
     transform: scale(1.1);
@@ -458,6 +476,7 @@ body > header {
 .btn_menu {
     display: none;
 }
+
 /*estilo de footer ---------------------------*/
 
 body footer {
@@ -487,7 +506,9 @@ body footer {
     margin-top: 80px;
 }
 
-.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
     display: inline-block;
     text-align: left;
     justify-items: left;
@@ -604,11 +625,13 @@ body footer {
 }
 
 .footer-icons {
-    display: flex;  /* Utilizamos flexbox para alinear horizontalmente los enlaces */
+    display: flex;
+    /* Utilizamos flexbox para alinear horizontalmente los enlaces */
 }
 
 .footer-icons a {
-    margin-right: 10px;  /* Agregamos un margen derecho entre los enlaces para separarlos */
+    margin-right: 10px;
+    /* Agregamos un margen derecho entre los enlaces para separarlos */
 }
 
 .footer-distributed .footer-icons {
@@ -624,13 +647,14 @@ body footer {
     color: #3F71EA;
 }
 
-.oculto {    
+.oculto {
     display: none;
 }
 
-.visible {    
+.visible {
     display: block;
 }
+
 .lista_menu {
     z-index: 999;
     position: absolute;
@@ -642,47 +666,60 @@ body footer {
 
 /*media queries------------------------------------------------------------------------------------------*/
 
-/*escritorio*/ 
+/*escritorio*/
 @media (min-width: 1000px) {
     nav.menu {
         display: flex;
         justify-content: end;
     }
+
     .btn_menu {
         display: none;
     }
-    .lista_menu{
+
+    .lista_menu {
         display: none;
     }
-    .header{
+
+    .header {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         height: 120px;
     }
-    .header .logo img{ /*del header*/
+
+    .header .logo img {
+        /*del header*/
         height: 60px;
         width: auto;
         transition: all 0.3s;
     }
-    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
         display: block;
         width: 100%;
         margin-bottom: 40px;
     }
+
     .footer-distributed .footer-center i {
         margin-left: 0;
     }
+
     .footer-icons {
         display: flex;
         justify-content: center;
     }
-    #logo { /*del footer*/
+
+    #logo {
+        /*del footer*/
         height: 60px;
         width: auto;
-    }    
+    }
 
-    .info { /*horario, ubicacion y telefono */
+    .info {
+        /*horario, ubicacion y telefono */
         padding: 100px;
         display: flex;
         flex-wrap: wrap;
@@ -692,31 +729,34 @@ body footer {
     .info-1 {
         margin: 25px;
     }
-    
-    .header-info { /*imagen primer ensalada con chefs y "Each Dish Tells A Story... "*/
+
+    .header-info {
+        /*imagen primer ensalada con chefs y "Each Dish Tells A Story... "*/
         display: flex;
         justify-content: center;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
         margin-top: 100px;
-        margin-bottom:500px;
+        margin-bottom: 500px;
     }
 
-    .header-img img { /*posicionando la imagen primer ensalada con chefs detras del texto y del boton about us */
+    .header-img img {
+        /*posicionando la imagen primer ensalada con chefs detras del texto y del boton about us */
         width: 650px;
         z-index: -1;
         position: absolute;
-        top:200px;
+        top: 200px;
         right: 0px;
 
     }
 
-    .product-info{
-        grid-template-columns: repeat(3, 1fr);  
+    .product-info {
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .nosotros-info { /*segunda ensalada del home y "Our dishes are our signature" */
+    .nosotros-info {
+        /*segunda ensalada del home y "Our dishes are our signature" */
         padding: 100px 0;
         display: flex;
         flex-direction: column;
@@ -729,96 +769,124 @@ body footer {
     nav.menu {
         display: none;
     }
+
     .footer-distributed {
         grid-template-columns: repeat(1, 1fr);
         text-align: center;
         justify-items: center;
         overflow: hidden;
     }
+
     .btn_menu {
         display: flex;
     }
-    .header{
+
+    .header {
         display: flex;
         justify-content: flex-start;
         align-items: center;
     }
-    .header .logo img{ /*del header*/
+
+    .header .logo img {
+        /*del header*/
         height: 50px;
         width: auto;
         transition: all 0.3s;
     }
-    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
         display: block;
         width: 100%;
         text-align: center;
         margin-bottom: 40px;
     }
+
     .footer-distributed .footer-center {
         text-align: left !important;
         margin-left: 70%;
     }
+
     .footer-distributed .footer-center i {
         margin-left: 0;
     }
+
     .footer-icons {
         display: flex;
         justify-content: center;
     }
-    #logo { /*del footer*/
+
+    #logo {
+        /*del footer*/
         height: 50px;
         width: auto;
     }
+
     .enlace_a_receta {
         width: 15rem;
         justify-content: center;
         text-align: center;
         margin: 1rem 1rem;
     }
-    .imagen_del_enlace{
+
+    .imagen_del_enlace {
         width: 100px;
         height: 100px;
     }
+
     .imagen_de_receta {
         width: 450px;
     }
+
     #foto_resto {
         width: 450px;
     }
+
     .foto_chef {
         width: 450px;
-    }   
+    }
+
     .cuerpo_about_us {
         line-height: 2;
         width: 28.125rem;
         padding: 0.75rem;
     }
+
     .cuerpo_chefs {
         line-height: 2;
         width: 28.125rem;
         padding: 0.75rem;
     }
+
     .cuerpo_contact_us {
         line-height: 2;
         width: 28.125rem;
         padding: 0.75rem;
     }
-    .cuerpo { /*de las recetas*/
+
+    .cuerpo {
+        /*de las recetas*/
         line-height: 2;
         width: 28.125rem;
         padding: 0.75rem;
     }
-    .cuerpo_hache_3{ /*en la página contact.html*/
+
+    .cuerpo_hache_3 {
+        /*en la página contact.html*/
         line-height: 2;
         width: 28.125rem;
         padding: 0.75rem;
     }
-    .iframe_maps > iframe { /*iframe de google maps*/
+
+    .iframe_maps>iframe {
+        /*iframe de google maps*/
         width: 400px;
         height: 300px;
     }
 
-    .info { /*horario, ubicacion y telefono */
+    .info {
+        /*horario, ubicacion y telefono */
         padding: 100px;
         display: flex;
         justify-content: center;
@@ -829,28 +897,33 @@ body footer {
         margin: 25px;
     }
 
-    .header-info {/*imagen primer ensalada y "Each Dish Tells A Story... "*/
+    .header-info {
+        /*imagen primer ensalada y "Each Dish Tells A Story... "*/
         display: flex;
         justify-content: center;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
     }
-    
+
     .header-txt {
         top: 100px;
         width: 80%;
     }
-    .header-img img {/*posicionando la imagen primer ensalada con chefs detras del texto y del boton about us */
+
+    .header-img img {
+        /*posicionando la imagen primer ensalada con chefs detras del texto y del boton about us */
         display: none;
     }
-    
+
     .product-info {
-        grid-template-columns: repeat(1, 1fr); /* Una columna en pantallas aún más pequeñas */
+        grid-template-columns: repeat(1, 1fr);
+        /* Una columna en pantallas aún más pequeñas */
         justify-content: center;
     }
 
-    .nosotros-info { /*segunda ensalada del home y "Our dishes are our signature" */
+    .nosotros-info {
+        /*segunda ensalada del home y "Our dishes are our signature" */
         padding: 100px 0;
         display: flex;
         justify-content: center;
@@ -871,96 +944,124 @@ body footer {
     nav.menu {
         display: none;
     }
+
     .footer-distributed {
         grid-template-columns: repeat(1, 1fr);
         text-align: center;
         justify-items: center;
         overflow: hidden;
     }
+
     .btn_menu {
         display: flex;
     }
-    .header{
+
+    .header {
         display: flex;
         justify-content: flex-start;
         align-items: center;
     }
-    .header .logo img{ /*del header*/
+
+    .header .logo img {
+        /*del header*/
         height: 50px;
         width: auto;
         transition: all 0.3s;
     }
-    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
         display: block;
         width: 100%;
         text-align: center;
         margin-bottom: 40px;
     }
+
     .footer-distributed .footer-center {
         text-align: left;
         margin-left: 50%;
     }
+
     .footer-distributed .footer-center i {
         margin-left: 0;
     }
+
     .footer-icons {
         display: flex;
         justify-content: center;
     }
-    #logo { /*del footer*/
+
+    #logo {
+        /*del footer*/
         height: 50px;
         width: auto;
     }
+
     .enlace_a_receta {
         width: 12rem;
         justify-content: center;
         text-align: center;
         margin: 1rem 1rem;
     }
-    .imagen_del_enlace{
+
+    .imagen_del_enlace {
         width: 75px;
-        height:  75px;
+        height: 75px;
     }
+
     .imagen_de_receta {
         width: 350px;
     }
+
     #foto_resto {
         width: 350px;
     }
+
     .foto_chef {
         width: 350px;
-    }   
+    }
+
     .cuerpo_about_us {
         line-height: 2;
         width: 25rem;
         padding: 0.75rem;
     }
+
     .cuerpo_chefs {
         line-height: 2;
         width: 25rem;
         padding: 0.75rem;
     }
+
     .cuerpo_contact_us {
         line-height: 2;
         width: 25rem;
         padding: 0.75rem;
     }
-    .cuerpo { /*de las recetas*/
+
+    .cuerpo {
+        /*de las recetas*/
         line-height: 2;
         width: 25rem;
         padding: 0.75rem;
     }
-    .cuerpo_hache_3{ /*en la página contact.html*/
+
+    .cuerpo_hache_3 {
+        /*en la página contact.html*/
         line-height: 2;
         width: 25rem;
         padding: 0.75rem;
     }
-    .iframe_maps > iframe { /*iframe de google maps*/
+
+    .iframe_maps>iframe {
+        /*iframe de google maps*/
         width: 400px;
         height: 300px;
     }
 
-    .info { /*horario, ubicacion y telefono */
+    .info {
+        /*horario, ubicacion y telefono */
         padding: 100px;
         display: flex;
         justify-content: center;
@@ -971,28 +1072,33 @@ body footer {
         margin: 25px;
     }
 
-    .header-info {/*imagen primer ensalada y "Each Dish Tells A Story... "*/
+    .header-info {
+        /*imagen primer ensalada y "Each Dish Tells A Story... "*/
         display: flex;
         justify-content: center;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
     }
-    
+
     .header-txt {
         top: 100px;
         width: 80%;
     }
-    .header-img img {/*posicionando la imagen primer ensalada con chefs detras del texto y del boton about us */
+
+    .header-img img {
+        /*posicionando la imagen primer ensalada con chefs detras del texto y del boton about us */
         display: none;
     }
-    
+
     .product-info {
-        grid-template-columns: repeat(1, 1fr); /* Una columna en pantallas aún más pequeñas */
+        grid-template-columns: repeat(1, 1fr);
+        /* Una columna en pantallas aún más pequeñas */
         justify-content: center;
     }
 
-    .nosotros-info { /*segunda ensalada del home y "Our dishes are our signature" */
+    .nosotros-info {
+        /*segunda ensalada del home y "Our dishes are our signature" */
         display: flex;
         justify-content: center;
         flex-direction: column;
