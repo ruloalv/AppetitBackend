@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Estilos para los campos del formulario */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilos para el botón de enviar */
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para mensajes de error */
+.error {
+    color: #ff0000;
+    margin-top: 5px;
+}
+
+/* Estilos para el contenedor de los campos del formulario */
+div {
+    margin-bottom: 15px;
+}
+
+
+/CSS de list.html/ body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.comments-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.animated-title {
+    color: #333;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+.comments-container {
+    margin: 0;
+}
+
+.comment-body {
+    margin: 0;
+}
+
+.comment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.comment-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px;
+}
+
+.comment-item a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.comment-item p {
+    margin: 0;
+    color: #555;
+}
+
+.delete-form {
+    margin-top: 10px;
+}
+
+button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c82333;
+}
+
+.go-to {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.go-to a {
+    text-decoration: none;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.go-to a:hover {
+    text-decoration: underline;
+}
