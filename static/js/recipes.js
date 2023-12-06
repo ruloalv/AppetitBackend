@@ -72,6 +72,7 @@ const renderRecipes = (data) => {
         }
     }
     let contenedor = document.getElementById("main");
+    // console.log(divb);
     contenedor.appendChild(divb);
     contenedor.appendChild(grupoBreakfast);
     contenedor.appendChild(divl);
