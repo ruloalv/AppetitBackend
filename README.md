@@ -1,7 +1,7 @@
 APPETIT - Healthy Recipes
 
 HOME
-![alt text](https://github.com/ruloalv/AppetitBackend/blob/main/readme_assets/Home.png?raw=true)
+![alt text](https://github.com/ruloalv/AppetitBackend/blob/main/readme_assets/HomeScroll.gif?raw=true)
 
 ## Descripción del Proyecto
 
