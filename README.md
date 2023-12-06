@@ -1,4 +1,7 @@
-# Documentación del Proyecto Full Stack - Backend
+APPETIT - Healthy Recipes
+
+HOME
+![alt text](https://github.com/ruloalv/AppetitBackend/blob/main/readme_assets/Home.png?raw=true)
 
 ## Descripción del Proyecto
 
