@@ -1,4 +1,4 @@
-<!-- {% extends "base.html" %}
+{% extends "base.html" %}
 {% load static %}
 
 {% block main %}
@@ -25,43 +25,6 @@
 		</div>
 
 		<div id="go-to">
-			<a href="{% url 'comment_create' %}">
-				Create new comment
-			</a>
-		</div>
-	</section>
-</main>
-{% endblock %} -->
-
-{% extends "base.html" %}
-{% load static %}
-
-{% block main %}
-<main>
-	<section class="comments-section">
-		<h1 class="animated-title">Comments</h1>
-		<div class="comments-container">
-			<div class="comment-body">
-				<ul class="comment-list">
-					{% for comment in comments %}
-					<li class="comment-item">
-						<a href="{% url 'comment_update' pk=comment.id %}">
-							<b>User Name:</b> {{ comment.username }}
-						</a>
-						<p><b>Subject:</b> {{ comment.subjectc }} - <b>Date:</b> {{ comment.date }}</p>
-						<p><b>Comment:</b> {{ comment.comment }}</p>
-						<form method="post" action="{% url 'comment_delete' pk=comment.id %}" class="delete-form">
-							{% csrf_token %}
-							<button type="submit"
-								onclick="return confirm('¿Estás seguro de que deseas eliminar {{ producto.nombre }}?')">Eliminar</button>
-						</form>
-					</li>
-					{% endfor %}
-				</ul>
-			</div>
-		</div>
-
-		<div class="go-to">
 			<a href="{% url 'comment_create' %}">
 				Create new comment
 			</a>
