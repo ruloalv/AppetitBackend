@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
 }
 
@@ -13,10 +13,11 @@ form {
 
 h2 {
     text-align: center;
-}
+} */
 
 /* Estilos para los campos del formulario */
-label {
+
+/* label {
     display: block;
     margin-bottom: 5px;
 }
@@ -30,10 +31,11 @@ textarea {
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
-}
+} */
 
 /* Estilos para el botón de enviar */
-button {
+
+/* button {
     background-color: #4caf50;
     color: white;
     padding: 10px 15px;
@@ -44,21 +46,21 @@ button {
 
 button:hover {
     background-color: #45a049;
-}
+} */
 
 /* Estilos para mensajes de error */
-.error {
+/* .error {
     color: #ff0000;
     margin-top: 5px;
-}
+} */
 
 /* Estilos para el contenedor de los campos del formulario */
-div {
+/* div {
     margin-bottom: 15px;
-}
+} */
 
 
-/*CSS de list.html NO SE, Y SI PONGO IMPORT SE CAMBIA TODO DE LAS OTRAS PAGINAS
+/* CSS de list.html NO SE, Y SI PONGO IMPORT SE CAMBIA TODO DE LAS OTRAS PAGINAS */
 
 body {
     font-family: 'Arial', sans-serif;
