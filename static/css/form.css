@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    margin: -18px;
+    margin: 0px;
     padding: 0px;
 }
 
@@ -63,102 +63,7 @@ div {
 }
 
 
-/* CSS de list.html NO SE, Y SI PONGO IMPORT SE CAMBIA TODO DE LAS OTRAS PAGINAS */
 
-/* body {
-    font-family: 'Arial', sans-serif;
-    background-color: #fff;
-    margin: 0;
-}
-
-form {
-    z-index: 1000;
-}
-
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.comments-section {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 80%;
-    max-width: 800px;
-}
-
-.animated-title {
-    color: #333;
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 20px;
-    animation: fadeInUp 0.8s ease-in-out;
-}
-
-.comments-container {
-    margin: 0;
-}
-
-.comment-body {
-    margin: 0;
-}
-
-.comment-list {
-    list-style: none;
-    padding: 0;
-}
-
-.comment-item {
-    border-bottom: 1px solid #eee;
-    padding: 15px;
-}
-
-.comment-item a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-}
-
-.comment-item p {
-    margin: 0;
-    color: #555;
-}
-
-.delete-form {
-    margin-top: 10px;
-}
-
-button {
-    background-color: #ffa600;
-    color: #fff;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #65c823;
-} */
-
-/* .go-to {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.go-to a {
-    text-decoration: none;
-    color: #28a745;
-    font-weight: bold;
-}
-
-.go-to a:hover {
-    text-decoration: underline;
-} */
 
 #go-to-container {
     text-align: center;
