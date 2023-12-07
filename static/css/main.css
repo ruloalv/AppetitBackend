@@ -494,7 +494,7 @@ body>header {
     align-items: center;
     height: auto;
     /* Cambia la altura a automático para que se ajuste al contenido */
-    padding: 10px 5%;
+    /* padding: 10px 5%; */
     /* Aumenta el relleno para dispositivos móviles */
 }
 
