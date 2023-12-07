@@ -3,6 +3,8 @@ APPETIT - Healthy Recipes
 HOME
 ![alt text](https://github.com/ruloalv/AppetitBackend/blob/main/readme_assets/HomeScroll.gif?raw=true)
 
+[![](https://www.canva.com/design/DAF2TMEuTLE/wGH4Q1mY9JyalgCA3udsDA/watch?utm_content=DAF2TMEuTLE&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel)
+
 ## Descripción del Proyecto
 
 Este proyecto representa una página web propiedad de una talentosa pareja de chefs, quienes comparten no solo sus recetas personales sino también otras populares, ofreciendo a sus clientes una visión transparente del proceso de elaboración y los ingredientes utilizados. 
