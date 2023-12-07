@@ -6,7 +6,9 @@
 {% endblock %}
 
 {% block main %}
-{% if object %}Update{% else %}{% endif %}
+<h1 class="titulo_animado">
+  {% if object %}Update{% else %}Create{% endif %}
+</h1>
 <form method="post">
   {% csrf_token %}
   {% for field in form %}
