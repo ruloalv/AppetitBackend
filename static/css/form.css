@@ -36,7 +36,7 @@ textarea {
 /* Estilos para el botón de enviar */
 
 button {
-    background-color: #4caf50;
+    background-color: #45a049;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -45,7 +45,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #ffa600;
 }
 
 /* Estilos para mensajes de error */
