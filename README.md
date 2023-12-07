@@ -5,9 +5,11 @@ HOME
 ![Home_GIF](https://github.com/ruloalv/AppetitBackend/blob/main/readme_assets/HomeScroll.gif?raw=true)
 
 RECIPES
+
 ![Recipes](https://github.com/ruloalv/AppetitBackend/blob/main/readme_assets/Recipes.png?raw=true)
 
-RECIPES
+CONTACT US
+
 ![ContactUs](https://github.com/ruloalv/AppetitBackend/blob/main/readme_assets/ContactUs01.png?raw=true)
 
 ## Descripción del Proyecto
