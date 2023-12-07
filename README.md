@@ -7,6 +7,9 @@ HOME
 RECIPES
 ![Recipes](https://github.com/ruloalv/AppetitBackend/blob/main/readme_assets/Recipes.png?raw=true)
 
+RECIPES
+![ContactUs](https://github.com/ruloalv/AppetitBackend/blob/main/readme_assets/ContactUs01.png?raw=true)
+
 ## Descripción del Proyecto
 
 Este proyecto representa una página web propiedad de una talentosa pareja de chefs, quienes comparten no solo sus recetas personales sino también otras populares, ofreciendo a sus clientes una visión transparente del proceso de elaboración y los ingredientes utilizados. 
