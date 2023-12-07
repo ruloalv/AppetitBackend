@@ -24,11 +24,31 @@
 			</div>
 		</div>
 
-		<div id="go-to">
-			<a href="{% url 'comment_create' %}">
-				Create new comment
-			</a>
-		</div>
-	</section>
+		<style>
+			#go-to-container {
+			  text-align: center; /* Centra el contenido horizontalmente */
+			}
+		  
+			#go-to {
+			  display: inline-block;
+			  padding: 10px 20px;
+			  border: 1px solid #4CAF50; /* Cambia el color del borde al verde */
+			  border-radius: 10px;
+			  background-color: #4CAF50; /* Cambia el color de fondo al verde */
+			  text-decoration: none;
+			}
+		  
+			#go-to a {
+			  color: white; /* Cambia el color del texto a blanco para que sea legible en el fondo verde */
+			}
+		  </style>
+		  
+		  <div id="go-to-container">
+			<div id="go-to">
+			  <a href="{% url 'comment_create' %}">
+				<b>Create new comment</b>
+			  </a>
+			</div>
+		  </div>
 </main>
 {% endblock %}

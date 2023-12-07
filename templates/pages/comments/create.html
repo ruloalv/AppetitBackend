@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block main %}
-{% if object %}Update{% else %}Create{% endif %} Comments
+{% if object %}Update{% else %}{% endif %}
 <form method="post">
   {% csrf_token %}
   {% for field in form %}
