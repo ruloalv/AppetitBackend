@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
 }
 
-form {
+form,
+.list-form {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
