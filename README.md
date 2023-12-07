@@ -3,7 +3,7 @@ APPETIT - Healthy Recipes
 HOME
 
 ![alt text](https://github.com/ruloalv/AppetitBackend/blob/main/readme_assets/HomeScroll.gif?raw=true)
-![alt_text](https://www.canva.com/design/DAF2TMEuTLE/wGH4Q1mY9JyalgCA3udsDA/watch?utm_content=DAF2TMEuTLE&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel)
+![alt_text](https://www.canva.com/design/DAF2TMEuTLE/wGH4Q1mY9JyalgCA3udsDA/watch?utm_content=DAF2TMEuTLE&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel?raw=true)
 
 ## Descripción del Proyecto
 
