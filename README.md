@@ -5,11 +5,13 @@ HOME
 
 ## Descripción del Proyecto
 
-El proyecto se basa en una página web dedicada a facilitar la obtención de recetas saludabes, promoviendo una alimentación equilibrada en la vida cotidiana.
-Además del Home que cuenta con una presentación comercial acerca del emprendimiento, tiene un apartado de recetas divididas en desayuno, almuerzo y postres, otro para
-la presentación de los chefs, una sección que habla sobre la historio del emprendimiento y un formulario de contacto.
+Este proyecto representa una página web propiedad de una talentosa pareja de chefs, quienes comparten no solo sus recetas personales sino también otras populares, ofreciendo a sus clientes una visión transparente del proceso de elaboración y los ingredientes utilizados. 
 
-Actualmente se amplió el proyecto incluyendo una sección de comentarios donde los usuarios de la página pueden ingresar sus opiniones, ideas, o cualquier dato que les resulte
+El Home destaca con una presentación comercial del restaurante de estos chefs, incluyendo secciones específicas para recetas de desayuno, almuerzo y postres. La página también presenta apartados dedicados a la presentación personal de los chefs, detalles sobre la historia inspiradora de su emprendimiento, así como un formulario de contacto para mantener una conexión directa con los visitantes. 
+
+Además, se incluye una sección especial que detalla la ubicación del restaurante, brindando a los usuarios toda la información necesaria para disfrutar de una experiencia culinaria única.
+
+Por ultimo se amplió el proyecto incluyendo una sección de comentarios donde los usuarios de la página pueden ingresar sus opiniones, ideas, o cualquier dato que les resulte
 interesante.
 Este apartado da la posibilidad de crear, modificar y eliminar comentarios y cuenta con una conexión con la base de datos que permite almacenar toda la información, para
 preservarla en el tiempo.
