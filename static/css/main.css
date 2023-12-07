@@ -13,14 +13,14 @@
 /* FONDO DE PAGINA */
 
 body {
-    background: #65c823;
+    background: white;
 }
 
 
 .circle {
     position: absolute;
     border-radius: 50%;
-    background: white;
+    background: #65c823;
     animation: ripple 15s infinite;
     box-shadow: 0px 0px 1px 0px #508fb9;
 }
