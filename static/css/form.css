@@ -64,8 +64,12 @@ button:hover {
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: black;
+    background-color: #fff;
     margin: 0;
+}
+
+form {
+    z-index: 1000;
 }
 
 main {

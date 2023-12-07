@@ -16,10 +16,6 @@ body {
     background: white;
 }
 
-.ripple-background {
-    z-index: -10;
-}
-
 
 .circle {
     position: absolute;
