@@ -12,9 +12,8 @@
 		<div class="receta_primera_parte">
 			<div class="cuerpo">
 				<ul>
-					<div>
-
-						{% for comment in comments %}
+					{% for comment in comments %}
+					<div class="list-form">
 						<a href="{% url 'comment_update' pk=comment.id %}">
 							<li><b>User Name:</b>{{ comment.username }}</li>
 						</a>
@@ -25,8 +24,8 @@
 							<button type="submit"
 								onclick="return confirm('¿Estás seguro de que deseas eliminar {{ producto.nombre }}?')">Eliminar</button>
 						</form>
-						{% endfor %}
 					</div>
+					{% endfor %}
 				</ul>
 			</div>
 		</div>
