@@ -21,6 +21,7 @@
 						<p><b>Comment:</b> {{ comment.comment }}</p>
 						{% csrf_token %}
 						<form method="post" action="{% url 'comment_delete' pk=comment.id %}" style="display: inline;">
+							{% csrf_token %}
 							<button type="submit"
 								onclick="return confirm('¿Estás seguro de que deseas eliminar {{ producto.nombre }}?')">Eliminar</button>
 
